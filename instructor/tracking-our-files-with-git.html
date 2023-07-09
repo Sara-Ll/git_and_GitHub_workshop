@@ -85,11 +85,11 @@
   From chaos to version control: a git and GitHub workshop
 </div>
 
-<aside class="col-md-12 lesson-progress"><div style="width: 79%" class="percentage">
-    79%
+<aside class="col-md-12 lesson-progress"><div style="width: 75%" class="percentage">
+    75%
   </div>
   <div class="progress ">
-    <div class="progress-bar " role="progressbar" style="width: 79%" aria-valuenow="79" aria-label="Lesson Progress" aria-valuemin="0" aria-valuemax="100">
+    <div class="progress-bar " role="progressbar" style="width: 75%" aria-valuenow="75" aria-label="Lesson Progress" aria-valuemin="0" aria-valuemax="100">
     </div>
   </div>
 </aside><div class="container">
@@ -181,9 +181,9 @@
         
     <div id="flush-collapsecurrent" class="accordion-collapse collapse show" aria-labelledby="flush-headingcurrent" data-bs-parent="#accordionFlushcurrent">
       <div class="accordion-body">
-        <ul><li><a href="#introduction">Introduction</a></li>
-<li><a href="#figures">Figures</a></li>
-<li><a href="#math">Math</a></li>
+        <ul><li><a href="#tracking-our-files">Tracking our files</a></li>
+<li><a href="#the-framework-and-working-mechanism-of-git">The framework and working mechanism of <code>git</code></a></li>
+<li><a href="#additional-useful-tricks">Additional useful tricks</a></li>
         </ul></div><!--/div.accordion-body-->
     </div><!--/div.accordion-collapse-->
         
@@ -247,7 +247,7 @@
         
         
         
-        <p>Estimated time <i aria-hidden="true" data-feather="clock"></i> 12 minutes </p>
+        <p>Estimated time <i aria-hidden="true" data-feather="clock"></i> 15 minutes </p>
         
         <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right"> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
@@ -262,8 +262,7 @@
 <div class="card-body">
 <div class="inner">
 <h3 class="card-title">Questions</h3>
-<ul><li>How do you write a lesson using R Markdown and
-<a href="https://carpentries.github.io/sandpaper/" class="external-link">sandpaper</a>?</li>
+<ul><li>How to track your files with <code>git</code>?</li>
 </ul></div>
 </div>
 </div>
@@ -271,64 +270,49 @@
 <div class="card-body">
 <div class="inner bordered">
 <h3 class="card-title">Objectives</h3>
-<ul><li>Explain how to use markdown with the new lesson template</li>
-<li>Demonstrate how to include pieces of code, figures, and nested
-challenge blocks</li>
+<ul><li>Track the files with <code>git</code>
+</li>
+<li>Explain the framework and working mechanism of <code>git</code>
+repositories</li>
 </ul></div>
 </div>
 </div>
 </div>
 </div>
-<section id="introduction"><h2 class="section-heading">Introduction<a class="anchor" aria-label="anchor" href="#introduction"></a>
+<section id="tracking-our-files"><h2 class="section-heading">Tracking our files<a class="anchor" aria-label="anchor" href="#tracking-our-files"></a>
 </h2>
-<hr class="half-width"><p>This is a lesson created via The Carpentries Workbench. It is written
-in <a href="https://pandoc.org/MANUAL.html" class="external-link">Pandoc-flavored Markdown</a>
-for static files (with extension <code>.md</code>) and <a href="https://rmarkdown.rstudio.com/" class="external-link">R Markdown</a> for dynamic files
-that can render code into output (with extension <code>.Rmd</code>).
-Please refer to the <a href="https://carpentries.github.io/sandpaper-docs/" class="external-link">Introduction to The
-Carpentries Workbench</a> for full documentation.</p>
-<p>What you need to know is that there are three sections required for a
-valid Carpentries lesson template:</p>
-<ol style="list-style-type: decimal"><li>
-<code>questions</code> are displayed at the beginning of the episode
-to prime the learner for the content.</li>
-<li>
-<code>objectives</code> are the learning objectives for an episode
-displayed with the questions.</li>
-<li>
-<code>keypoints</code> are displayed at the end of the episode to
-reinforce the objectives.</li>
-</ol><div id="accordionInstructor1" class="accordion instructor-note accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
-  <h3 class="accordion-header" id="headingInstructor1">
-  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div>
-  Instructor Note
-  </h3>
-</button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
-<div class="accordion-body">
-<p>Inline instructor notes can help inform instructors of timing
-challenges associated with the lessons. They appear in the “Instructor
-View”</p>
-</div>
-</div>
-</div>
-</div>
-<div id="challenge-1-can-you-do-it" class="callout challenge">
+<hr class="half-width"><p>Let’s follow the hint from <code>git status</code> to add our files
+to <code>git</code> for tracking their changes.</p>
+<div id="exercise" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
-<div id="challenge-1-can-you-do-it" class="callout-inner">
-<h3 class="callout-title">Challenge 1: Can you do it?<a class="anchor" aria-label="anchor" href="#challenge-1-can-you-do-it"></a>
+<div id="exercise" class="callout-inner">
+<h3 class="callout-title">Exercise<a class="anchor" aria-label="anchor" href="#exercise"></a>
 </h3>
 <div class="callout-content">
-<p>What is the output of this command?</p>
-<div class="codewrapper sourceCode" id="cb1">
-<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu">paste</span><span class="op">(</span><span class="st">"This"</span>, <span class="st">"new"</span>, <span class="st">"lesson"</span>, <span class="st">"looks"</span>, <span class="st">"good"</span><span class="op">)</span></span></code></pre>
+<ol style="list-style-type: decimal"><li><p>Add the ‘english.txt’ file for tracking with
+<code>git</code>.</p></li>
+<li><p>Check the status of the local git repository. Is there an
+additional step to track the file with <code>git</code>?</p></li>
+<li><p>Do the same with the script ‘greetings.py’.</p></li>
+<li><p>Check the status of the local git repository.</p></li>
+</ol></div>
+</div>
+</div>
+<div id="accordionHint1" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button hint-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHint1" aria-expanded="false" aria-controls="collapseHint1">
+  <h4 class="accordion-header" id="headingHint1">
+  Hints
+  </h4>
+</button>
+<div id="collapseHint1" class="accordion-collapse collapse" aria-labelledby="headingHint1" data-bs-parent="#accordionHint1">
+<div class="accordion-body">
+<p>How is the name of the section where the ‘english.txt’ file appears
+after doing <code>git add</code>?</p>
+<p>Is there a <code>git</code> command that can help here to finish
+tracking the changes? See <code>git -h</code>.</p>
 </div>
 </div>
 </div>
@@ -337,31 +321,179 @@ View”</p>
 <div class="accordion-item">
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1">
-  Output
+  Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
-<div class="codewrapper">
-<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+<ol style="list-style-type: decimal"><li>Add the ‘english.txt’ file for tracking with <code>git</code>.</li>
+</ol><div class="codewrapper sourceCode" id="cb1">
+<h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="output" tabindex="0"><code>[1] "This new lesson looks good"</code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add english.txt</span></code></pre>
+</div>
+<ol start="2" style="list-style-type: decimal"><li>Check the status of the local git repository. Is there an additional
+step to track the file with <code>git</code>?</li>
+</ol><div class="codewrapper sourceCode" id="cb2">
+<h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> status</span></code></pre>
+</div>
+<p>Output</p>
+<pre><code>On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached &lt;file&gt;..." to unstage)
+	new file:   english.txt
+
+Untracked files:
+  (use "git add &lt;file&gt;..." to include in what will be committed)
+	greetings.py
+</code></pre>
+<p>The ‘english.txt’ file appears now in the section “Changes to be
+committed”.</p>
+<p>We need to commit the added file to finish tracking it with
+<code>git</code>. If we see the <code>git -h</code>, there is a command
+for commit a change:</p>
+<div class="codewrapper sourceCode" id="cb4">
+<h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Add english.txt file"</span></span></code></pre>
+</div>
+<p>Output</p>
+<pre><code>[main (root-commit) bf0b837] Add english.txt file
+ 1 file changed, 1 insertion(+)
+ create mode 100644 english.txt</code></pre>
+<p>The option <code>-m</code> is equivalent to <code>--message</code>
+and it needs to be follow by a short sentence indicating the change we
+are tracking.</p>
+<p>Checking again the status of our repository shows that only the
+‘greetings.py’ script is missing to track.</p>
+<div class="codewrapper sourceCode" id="cb6">
+<h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> status</span></code></pre>
+</div>
+<p>Output</p>
+<pre><code>On branch main
+Untracked files:
+  (use "git add &lt;file&gt;..." to include in what will be committed)
+	greetings.py
+
+nothing added to commit but untracked files present (use "git add" to track)</code></pre>
+<ol start="3" style="list-style-type: decimal"><li>Do the same with the script ‘greetings.py’.</li>
+</ol><div class="codewrapper sourceCode" id="cb8">
+<h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add greetings.py</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Add greetings.py script"</span></span></code></pre>
+</div>
+<ol start="4" style="list-style-type: decimal"><li>Check the status of the local git repository.</li>
+</ol><p>Now we should have no more files or changes to track.</p>
+<div class="codewrapper sourceCode" id="cb9">
+<h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> status</span></code></pre>
+</div>
+<p>Output</p>
+<pre><code>On branch main
+nothing to commit, working tree clean</code></pre>
 </div>
 </div>
 </div>
 </div>
+</section><section id="the-framework-and-working-mechanism-of-git"><h2 class="section-heading">The framework and working mechanism of <code>git</code><a class="anchor" aria-label="anchor" href="#the-framework-and-working-mechanism-of-git"></a>
+</h2>
+<hr class="half-width"><div class="section level3">
+<h3 id="explanation-with-climbing-analogy">Explanation with climbing analogy<a class="anchor" aria-label="anchor" href="#explanation-with-climbing-analogy"></a></h3>
+<p>Let’s go back to the climbing analogy to further understand the
+difference between <code>git add</code> and <code>git commit</code>.</p>
+<p>Once, we have check the climbing routes, we decide to go for one, we
+tie the rope to our harness, check our belayer partner and start
+climbing. We start doing moves, grabbing to holds with our hands,
+stepping onto ledges of the wall. We are adding moves in a sequence as
+we climb: <code>git add &lt;movement</code>. It is like making changes
+to our files and adding them for tracking.</p>
+<figure><img src="../fig/AH-gitAdd.png" alt="" class="figure mx-auto d-block"><figcaption>Adding movements while you climb:
+<code>git add</code> (<a href="https://allisonhorst.com/git-github" class="external-link">Artwork</a> by <a href="https://twitter.com/allison_horst" class="external-link">Allison Horst</a>)</figcaption></figure><p>The route is quite long, so we probably don’t want to fall all way
+down to the ground. We want to secure our progress after several
+movements by clipping our rope in a quickdraw in the wall:
+<code>git commit -m "First section of the route"</code>. It is like
+committing our files to secure the changes we have done until some
+point.</p>
+<figure><img src="../fig/AH-gitCommitClick.png" alt="" class="figure mx-auto d-block"><figcaption>Secure your movements (file changes) by clipping
+(<code>git commit</code>) (<a href="https://allisonhorst.com/git-github" class="external-link">Artwork</a> by <a href="https://twitter.com/allison_horst" class="external-link">Allison Horst</a>)</figcaption></figure><p>If we slip and fall, we don’t loose all our progress but we are back
+to our last clip (commit). The same way as if we mess it up with our
+files or scripts and broke our code, we can go back to our last commit
+where everything was working fine.</p>
+<figure><img src="../fig/AH-gitCommitFall.png" alt="" class="figure mx-auto d-block"><figcaption>Fall only to the last clip (commit) (<a href="https://allisonhorst.com/git-github" class="external-link">Artwork</a> by <a href="https://twitter.com/allison_horst" class="external-link">Allison Horst</a>)</figcaption></figure><div id="callout1" class="callout callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="challenge-2-how-do-you-nest-solutions-within-challenge-blocks" class="callout challenge">
+<div class="callout-inner">
+<h3 class="callout-title">Callout<a class="anchor" aria-label="anchor" href="#callout1"></a>
+</h3>
+<div class="callout-content">
+<p>Make sure to often track your changes to avoid having to redo many
+files or lines that were working fine.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="section level3">
+<h3 id="more-technical-explanation">More technical explanation<a class="anchor" aria-label="anchor" href="#more-technical-explanation"></a></h3>
+<p>Let’s explain the commands <code>git add</code> and
+<code>git commit</code> in a more technical way.</p>
+<p><code>git</code> has two areas: - <strong>staging area</strong> where
+files are added with <code>git add</code> and get prepared to be
+committed. - <strong>local repository</strong> where files are saved
+with <code>git commit</code> and the progress is secured allowing us to
+go back to this version of the files in a later point.</p>
+<figure><img src="../fig/SC-git-staging-area.svg" alt="" class="figure mx-auto d-block"><figcaption>Staging area and local git repository. Source: <a href="https://swcarpentry.github.io/git-novice/index.html" class="external-link">Software
+Carpentry</a>)</figcaption></figure></div>
+</section><section id="additional-useful-tricks"><h2 class="section-heading">Additional useful tricks<a class="anchor" aria-label="anchor" href="#additional-useful-tricks"></a>
+</h2>
+<hr class="half-width"><div class="section level3">
+<h3 id="git-add"><code>git add</code><a class="anchor" aria-label="anchor" href="#git-add"></a></h3>
+<p>If we have a bunch of files to add and don’t want to write them one
+by one we can write with patterns or even use <code>git add .</code> to
+add all of them.</p>
+<p>However, we should use patterns and <code>git add .</code> with
+caution, as we can end up including files that we don’t want to add at
+that point. It is then useful to use the option <code>--dry-run</code>
+to have a preview of the files that are going to be added before really
+adding them to the staging area:</p>
+<div class="codewrapper sourceCode" id="cb11">
+<h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add . <span class="at">--dry-run</span></span></code></pre>
+</div>
+<p>Output</p>
+<pre><code>add 'english.txt'
+add 'greetings.py'</code></pre>
+</div>
+<div class="section level3">
+<h3 id="gitignore">‘.gitignore’<a class="anchor" aria-label="anchor" href="#gitignore"></a></h3>
+<p>There might be some files that we don’t want to track at all. We can
+make <code>git</code> to ignore these files, so they are not listed all
+the time as untracked files. To do this, we need to create a
+<em>‘.gitignore’</em> file that contains files and folders we don’t want
+to include in our git repository.</p>
+<div id="exercise-1" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
-<div id="challenge-2-how-do-you-nest-solutions-within-challenge-blocks" class="callout-inner">
-<h3 class="callout-title">Challenge 2: how do you nest solutions within
-challenge blocks?<a class="anchor" aria-label="anchor" href="#challenge-2-how-do-you-nest-solutions-within-challenge-blocks"></a>
+<div id="exercise-1" class="callout-inner">
+<h3 class="callout-title">Exercise<a class="anchor" aria-label="anchor" href="#exercise-1"></a>
 </h3>
 <div class="callout-content">
-
-</div>
+<ol style="list-style-type: decimal"><li><p>Create a file name ‘notes.txt’ and make <code>git</code> to
+ignore it.</p></li>
+<li><p>Create a folder name ‘data’ with a couple of files: ‘data_A.txt’,
+‘data_B.txt’, and make <code>git</code> to ignore them.</p></li>
+</ol></div>
 </div>
 </div>
 <div id="accordionSolution2" class="accordion challenge-accordion accordion-flush">
@@ -371,40 +503,114 @@ challenge blocks?<a class="anchor" aria-label="anchor" href="#challenge-2-how-do
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
-<p>You can add a line with at least three colons and a
-<code>solution</code> tag.</p>
-</div>
-</div>
-</div>
-</div>
-</section><section id="figures"><h2 class="section-heading">Figures<a class="anchor" aria-label="anchor" href="#figures"></a>
-</h2>
-<hr class="half-width"><p>You can include figures generated from R Markdown:</p>
-<div class="codewrapper sourceCode" id="cb3">
-<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+<ol style="list-style-type: decimal"><li>Create a file name ‘notes.txt’ and make <code>git</code> to ignore
+it.</li>
+</ol><div class="codewrapper sourceCode" id="cb13">
+<h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu">pie</span><span class="op">(</span></span>
-<span>  <span class="fu">c</span><span class="op">(</span>Sky <span class="op">=</span> <span class="fl">78</span>, <span class="st">"Sunny side of pyramid"</span> <span class="op">=</span> <span class="fl">17</span>, <span class="st">"Shady side of pyramid"</span> <span class="op">=</span> <span class="fl">5</span><span class="op">)</span>, </span>
-<span>  init.angle <span class="op">=</span> <span class="fl">315</span>, </span>
-<span>  col <span class="op">=</span> <span class="fu">c</span><span class="op">(</span><span class="st">"deepskyblue"</span>, <span class="st">"yellow"</span>, <span class="st">"yellow3"</span><span class="op">)</span>, </span>
-<span>  border <span class="op">=</span> <span class="cn">FALSE</span></span>
-<span><span class="op">)</span></span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create 'notes.txt' file</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="fu">touch</span> notes.txt</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Check repository status</span></span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> status</span></code></pre>
 </div>
-<figure style="text-align: center"><img src="../fig/tracking-our-files-with-git-rendered-pyramid-1.png" alt="pie chart illusion of a pyramid" class="figure mx-auto d-block"><figcaption>
-Sun arise each and every morning
-</figcaption></figure><p>Or you can use pandoc markdown for static figures with the following
-syntax:</p>
-<p><code>![optional caption that appears below the figure](figure url){alt='alt text for accessibility purposes'}</code></p>
-<figure><img src="https://raw.githubusercontent.com/carpentries/logo/master/Badge_Carpentries.svg" alt="Blue Carpentries hex person logo with no text." class="figure mx-auto d-block"><figcaption>You belong in The Carpentries!</figcaption></figure></section><section id="math"><h2 class="section-heading">Math<a class="anchor" aria-label="anchor" href="#math"></a>
-</h2>
-<hr class="half-width"><p>One of our episodes contains <span class="math inline">\(\LaTeX\)</span> equations when describing how to
-create dynamic reports with {knitr}, so we now use mathjax to describe
-this:</p>
-<p><code>$\alpha = \dfrac{1}{(1 - \beta)^2}$</code> becomes: <span class="math inline">\(\alpha = \dfrac{1}{(1 - \beta)^2}\)</span></p>
-<p>Cool, right?</p>
+<p>Output</p>
+<pre><code>On branch main
+Untracked files:
+  (use "git add &lt;file&gt;..." to include in what will be committed)
+	notes.txt
+
+nothing added to commit but untracked files present (use "git add" to track)</code></pre>
+<p>Make <code>git</code> to ignore tracking this file.</p>
+<p>Create a ‘.gitignore’ file (<code>nano .gitignore</code>) with the
+name of the file on it:</p>
+<pre><code><span><span class="va">notes.txt</span></span></code></pre>
+<p>Check repository status:</p>
+<div class="codewrapper sourceCode" id="cb16">
+<h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> status</span></code></pre>
+</div>
+<p>Output</p>
+<pre><code>On branch main
+Untracked files:
+  (use "git add &lt;file&gt;..." to include in what will be committed)
+	.gitignore
+
+nothing added to commit but untracked files present (use "git add" to track)</code></pre>
+<p>Now, the ‘notes.txt’ file does not appear in “Untracked files”.</p>
+<p>The .gitignore file appears as an untracked file and we can add it to
+our repository:</p>
+<div class="codewrapper sourceCode" id="cb18">
+<h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .gitignore</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Add .gitignore file"</span></span></code></pre>
+</div>
+<ol start="2" style="list-style-type: decimal"><li>Create a folder name ‘data’ with a couple of files: ‘data_A.txt’,
+‘data_B.txt’, and make <code>git</code> to ignore them.</li>
+</ol><div class="codewrapper sourceCode" id="cb19">
+<h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mkdir</span> data</span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="fu">touch</span> data/data_A.txt data/data_B.txt</span></code></pre>
+</div>
+<div class="codewrapper sourceCode" id="cb20">
+<h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> status</span></code></pre>
+</div>
+<p>Output</p>
+<pre><code>On branch main
+Untracked files:
+  (use "git add &lt;file&gt;..." to include in what will be committed)
+	data/
+
+nothing added to commit but untracked files present (use "git add" to track)</code></pre>
+<p>.gitignore</p>
+<pre><code>notes.txt
+data/</code></pre>
+<p>When doing <code>git status</code>, .gitignore file appears again as
+an untracked file as we have modified it. We can add the changes to our
+repository:</p>
+<div class="codewrapper sourceCode" id="cb23">
+<h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .gitignore</span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Ignore data folder"</span></span></code></pre>
+</div>
+<p>* Patterns with asterisks can also be written into the .gitignore
+file (e.g.: *.png to avoid tracking any image with the .png
+extension)</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section level3">
+<h3 id="git-commit"><code>git commit</code><a class="anchor" aria-label="anchor" href="#git-commit"></a></h3>
+<p>We sometimes need to include more information of the additions and
+changes to our files in the commit message. Indeed, it is a good
+strategy to have informative messages in our commits, because it will
+make easier to understand the history of our changes and to find in
+which commit are the changes we are looking for if we need to go
+back.</p>
+<p>For example, in the case of the climbing:
+<code>git commit -m "First section of the route"</code>, the message is
+not really informative. We might want to include the specifics
+movements. Luckily, <code>git commit</code> allows us to make commit
+messages with more than one line.</p>
+<p>If we don’t include the option <code>-m</code> with
+<code>git commit</code>, when pressing enter, the text editor that we
+set it up for git (see [configuration of git][configuring-git.Rmd]) will
+open. There, we can write several lines, for example:</p>
+<pre><code>First section of the route
+
+Left hand to big hold, cross right hand, left foot to the small ledge at the knee height.
+
+Other notes: Clean well the climbing shoes before starting to climb, or you will slip. </code></pre>
 <div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
 <i class="callout-icon" data-feather="key"></i>
@@ -413,14 +619,12 @@ this:</p>
 <h3 class="callout-title">Keypoints<a class="anchor" aria-label="anchor" href="#keypoints1"></a>
 </h3>
 <div class="callout-content">
-<ul><li>Use <code>.md</code> files for episodes when you want static
-content</li>
-<li>Use <code>.Rmd</code> files for episodes when you need to generate
-output</li>
-<li>Run <code>sandpaper::check_lesson()</code> to identify any issues
-with your lesson</li>
-<li>Run <code>sandpaper::build_lesson()</code> to preview your lesson
-locally</li>
+<ul><li><p><code>git add &lt;file&gt; [--dry-run]</code> to add file/s to
+the staging area, use the <code>--dry-run</code> option to have a
+preview of the files to add before adding them.</p></li>
+<li><p><code>git commit [-m "MESSAGE"]</code> to record chagnes to the
+repository, use the <code>-m</code> option to include a short
+message</p></li>
 </ul></div>
 </div>
 </div>
@@ -428,6 +632,7 @@ locally</li>
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use. 
  -->
+</div>
 </section></div> <!-- / div.lesson-content -->
     </main><!-- / main#main-content.main-content --><nav class="bottom-pagination mx-md-4" aria-label="Previous and Next Chapter"><div class="d-block d-sm-block d-md-none">
         <a class="chapter-link" href="../instructor/initialising-a-local-git-repository.html"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous</a>
