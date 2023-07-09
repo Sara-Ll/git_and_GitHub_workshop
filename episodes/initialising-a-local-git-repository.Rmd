@@ -1,0 +1,310 @@
+---
+title: 'Initialising a local git repository'
+teaching: 15
+exercises: 15
+---
+
+:::::::::::::::::::::::::::::::::::::: questions 
+
+- How to initiate a local `git` repository to track the changes of a project?
+
+::::::::::::::::::::::::::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::: objectives
+
+- Start a simple project
+- Initiate local git repository
+- Explain the framework and working mechanism of `git` repositories
+
+::::::::::::::::::::::::::::::::::::::::::::::::
+
+## Starting a project
+
+Let's start an easy project with a simple script and some text files to see the utility of `git` as a version control system.
+
+:::::::::::::::::::::::: challenge
+
+### Exercise
+
+1. Open the terminal and navigate to a directory to save the project.
+
+2. Create a folder for the project and enter into it.
+
+3. Create a python script that asks the user to input a language.
+
+4. Execute the python script.
+
+::::::::::::::::::::: hint
+
+### Hint for novice coders
+
+`pwd` to print working directory. It prints the folder path you are currently at in the terminal
+
+`cd` to change to other directory. Navigate to different folders by writing the name of the folders separated by `/'. You can click the TAB key to autocomplete.
+
+`~` means the user's home directory to avoid writing the full path (e.g.: `/Users/sll/greetings` is equivalent to `~/greetings`)
+
+
+Make sure to have Python v3 installed:
+
+```sh
+python3 --version # or python --version
+```
+
+Make sure it gives a version 3 of python (first number is 3): `Python 3.#.#`
+
+If you don't have `python3` installed download it from [here](https://www.python.org/downloads/).
+
+:::::::::::::::::::::::::::::
+
+
+:::::::::::::::::::::::::: solution
+
+### Solution
+
+1. Open the terminal and navigate to a directory to save the project.
+
+Let's save it in our home's directory:
+
+```sh
+cd ~
+```
+
+2. Create a folder for the project and enter into it.
+
+```sh
+mkdir greetings
+cd greetings
+```
+
+3. Create a python script that asks the user to input a language.
+
+Open a text editor in your local computer or in the terminal (e.g., `nano`) and write the script `greetings.py`:
+
+```python
+# Greetings script
+
+language = input("Language?: ")
+```
+
+4. Execute the python script.
+
+```sh
+python3 greetings.py
+```
+
+Output:
+
+```
+Language?: <type and press enter>
+```
+
+You can type whatever and press enter.
+
+:::::::::::::::::::::::::::::::::::
+
+:::::::::::::::::::::::::::::::::::
+
+
+As you might have noticed, the script is not executing anything after we type and press enter. 
+
+We want to get a greeting in the language that we input. 
+
+Let's start adding the greeting in English.
+
+:::::::::::::::::::::::: challenge
+
+### Exercise
+
+1. Create the file 'english.txt' that contains "Hello".
+
+2. Modify the python script to take the 'english.txt' file and print the line of this file.
+
+3. Execute python script.
+
+::::::::::::::::::::: hint
+
+### Hint for novice coders
+
+`with open(<filename.txt>, "r") as file:` to open the 'english.txt' file
+
+`file.read()` to read 'english.txt' file
+
+`print(<object>)` to print line of 'english.txt' file
+
+:::::::::::::::::::::::::::::
+
+
+:::::::::::::::::::::::::: solution
+
+### Solution
+
+1. Create the file 'english.txt' that contains "Hello".
+
+Open a text editor in your local computer or in the terminal (e.g., `nano`) and write the text file `english.txt`:
+
+```
+Hello!
+```
+
+2. Modify the python script to take the 'english.txt' file and print the line of this file.
+
+Open the `greetings.py` script with a text editor in your local computer or in the terminal (e.g., `nano`) and include the last lines:
+
+```python
+# Greetings script
+
+language = input("Language?: ")
+
+with open("english.txt", "r") as file:
+    greeting = file.read()
+    print(greeting)
+```
+
+3. Execute the python script.
+
+```sh
+python3 greetings.py
+```
+
+Output:
+
+```
+Language?: <type and press enter>
+Hello!
+```
+
+You can type "english" and press enter.
+
+:::::::::::::::::::::::::::::::::::
+
+:::::::::::::::::::::::::::::::::::
+
+
+::::::::::::::::::: callout
+
+### N.B.
+
+You might have noticed that it does not matter what you type but it always gives back "Hello!", we will solve that later, but before messing up our progress, let's git our project to track the changes!
+:::::::::::::::::::::::::::::
+
+
+### Initialising `git` 
+
+Let's start our adventure in `git` to track the changes in our small project. 
+
+![Let's embark in the `git` adventure! ([Artwork][AH_artwork_git] by [Allison Horst][AH_twitter])](episodes/fig/AH-gitInit.jpeg)
+
+We will use the analogy with climbing to explain `git` with the [amazing illustrations][AH_artwork_git] by [Allison Horst][AH_twitter] (see more of her data science & statistics artwork [here](https://allisonhorst.com/allison-horst))
+
+
+:::::::::::::::::::::::: challenge
+
+### Exercise
+
+1. Check hidden files.
+
+2. Initialise a git repository.
+
+3. Check again hidden files. What has changed?
+
+4. Check the status of our repository.
+
+::::::::::::::::::::: hint
+
+### Hint for novice coders
+
+`ls` to list files. Use an additional option to see hidden files, you can see the options in the manual by typing: `man ls` 
+
+Check git options with `git -h` (equivalent to `git --help`)
+
+:::::::::::::::::::::::::::::
+
+
+:::::::::::::::::::::::::: solution
+
+### Solution
+
+1. Check hidden files.
+
+```sh
+ls -a
+```
+
+Output:
+
+```
+.            ..           english.txt  greetings.py
+```
+
+2. Initialise a git repository.
+
+```sh
+git init
+```
+
+Output:
+
+```
+Initialized empty Git repository in /Users/sll/greetings/.git/
+```
+
+We only need to do this once per project.
+
+3. Check again hidden files. What has changed?
+
+```sh
+ls -a
+```
+
+Output 
+
+```
+.            ..           .git         english.txt  greetings.py
+```
+
+Now there is a `.git` folder with some files inside that will record the changes of our repository. 
+
+4. Check the status of our repository.
+
+
+![`git status` ([Artwork][AH_artwork_git] by [Allison Horst][AH_twitter])](episodes/fig/AH-gitStatus.jpeg)
+
+
+```sh
+git status
+```
+
+Output
+
+```
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	english.txt
+	greetings.py
+
+nothing added to commit but untracked files present (use "git add" to track)
+```
+
+As we just initialise the git repository, none of our files (english.txt, greetings.py) are tracked as indicated in the message.
+
+:::::::::::::::::::::::::::::::::::
+
+:::::::::::::::::::::::::::::::::::
+
+You can see that `git` is guiding you by indicating the command to start tracking your files. 
+
+Let's go to the next episode to start tracking our files!
+
+
+::::::::::::::::::::::::::::::::::::: keypoints 
+
+- `git init` to create an empty Git repository or reinitialize an existing one
+- `git status` to show the working tree status
+
+::::::::::::::::::::::::::::::::::::::::::::::::
+
