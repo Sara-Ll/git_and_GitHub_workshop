@@ -10,3 +10,5 @@ any links that you are not going to use.
 
 [AH_twitter]: https://twitter.com/allison_horst
 [AH_artwork_git]: https://allisonhorst.com/git-github
+
+[SC_git]: https://swcarpentry.github.io/git-novice/index.html
