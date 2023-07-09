@@ -1,6 +1,6 @@
 ---
 title: 'Initialising a local git repository'
-teaching: 15
+teaching: 10
 exercises: 15
 ---
 
@@ -13,8 +13,7 @@ exercises: 15
 ::::::::::::::::::::::::::::::::::::: objectives
 
 - Start a simple project
-- Initiate local git repository
-- Explain the framework and working mechanism of `git` repositories
+- Initialise local git repository
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -268,7 +267,7 @@ Now there is a `.git` folder with some files inside that will record the changes
 4. Check the status of our repository.
 
 
-![`git status` ([Artwork][AH_artwork_git] by [Allison Horst][AH_twitter])](episodes/fig/AH-gitStatus.jpeg)
+![Once we arrived to the climbing area, we need to check the routes! The same way once we initialise our git repository we need to check it out with `git status` ([Artwork][AH_artwork_git] by [Allison Horst][AH_twitter])](episodes/fig/AH-gitStatus.jpeg)
 
 
 ```sh
