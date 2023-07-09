@@ -1,45 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://FIXME-template-source.github.io/NA/404.html</loc>
+    <loc>https://Sara-Ll.github.io/git_and_GitHub_workshop/404.html</loc>
   </url>
   <url>
-    <loc>https://FIXME-template-source.github.io/NA/CODE_OF_CONDUCT.html</loc>
+    <loc>https://Sara-Ll.github.io/git_and_GitHub_workshop/CODE_OF_CONDUCT.html</loc>
   </url>
   <url>
-    <loc>https://FIXME-template-source.github.io/NA/LICENSE.html</loc>
+    <loc>https://Sara-Ll.github.io/git_and_GitHub_workshop/LICENSE.html</loc>
   </url>
   <url>
-    <loc>https://FIXME-template-source.github.io/NA/index.html</loc>
+    <loc>https://Sara-Ll.github.io/git_and_GitHub_workshop/aio.html</loc>
   </url>
   <url>
-    <loc>https://FIXME-template-source.github.io/NA/instructor/404.html</loc>
+    <loc>https://Sara-Ll.github.io/git_and_GitHub_workshop/configuring-git.html</loc>
   </url>
   <url>
-    <loc>https://FIXME-template-source.github.io/NA/instructor/CODE_OF_CONDUCT.html</loc>
+    <loc>https://Sara-Ll.github.io/git_and_GitHub_workshop/images.html</loc>
   </url>
   <url>
-    <loc>https://FIXME-template-source.github.io/NA/instructor/LICENSE.html</loc>
+    <loc>https://Sara-Ll.github.io/git_and_GitHub_workshop/index.html</loc>
   </url>
   <url>
-    <loc>https://FIXME-template-source.github.io/NA/instructor/index.html</loc>
+    <loc>https://Sara-Ll.github.io/git_and_GitHub_workshop/instructor/404.html</loc>
   </url>
   <url>
-    <loc>https://FIXME-template-source.github.io/NA/instructor/introduction.html</loc>
+    <loc>https://Sara-Ll.github.io/git_and_GitHub_workshop/instructor/CODE_OF_CONDUCT.html</loc>
   </url>
   <url>
-    <loc>https://FIXME-template-source.github.io/NA/instructor/profiles.html</loc>
+    <loc>https://Sara-Ll.github.io/git_and_GitHub_workshop/instructor/LICENSE.html</loc>
   </url>
   <url>
-    <loc>https://FIXME-template-source.github.io/NA/instructor/reference.html</loc>
+    <loc>https://Sara-Ll.github.io/git_and_GitHub_workshop/instructor/aio.html</loc>
   </url>
   <url>
-    <loc>https://FIXME-template-source.github.io/NA/introduction.html</loc>
+    <loc>https://Sara-Ll.github.io/git_and_GitHub_workshop/instructor/configuring-git.html</loc>
   </url>
   <url>
-    <loc>https://FIXME-template-source.github.io/NA/profiles.html</loc>
+    <loc>https://Sara-Ll.github.io/git_and_GitHub_workshop/instructor/images.html</loc>
   </url>
   <url>
-    <loc>https://FIXME-template-source.github.io/NA/reference.html</loc>
+    <loc>https://Sara-Ll.github.io/git_and_GitHub_workshop/instructor/index.html</loc>
+  </url>
+  <url>
+    <loc>https://Sara-Ll.github.io/git_and_GitHub_workshop/instructor/instructor-notes.html</loc>
+  </url>
+  <url>
+    <loc>https://Sara-Ll.github.io/git_and_GitHub_workshop/instructor/introduction-to-git.html</loc>
+  </url>
+  <url>
+    <loc>https://Sara-Ll.github.io/git_and_GitHub_workshop/instructor/introduction.html</loc>
+  </url>
+  <url>
+    <loc>https://Sara-Ll.github.io/git_and_GitHub_workshop/instructor/key-points.html</loc>
+  </url>
+  <url>
+    <loc>https://Sara-Ll.github.io/git_and_GitHub_workshop/instructor/profiles.html</loc>
+  </url>
+  <url>
+    <loc>https://Sara-Ll.github.io/git_and_GitHub_workshop/instructor/reference.html</loc>
+  </url>
+  <url>
+    <loc>https://Sara-Ll.github.io/git_and_GitHub_workshop/instructor-notes.html</loc>
+  </url>
+  <url>
+    <loc>https://Sara-Ll.github.io/git_and_GitHub_workshop/introduction-to-git.html</loc>
+  </url>
+  <url>
+    <loc>https://Sara-Ll.github.io/git_and_GitHub_workshop/introduction.html</loc>
+  </url>
+  <url>
+    <loc>https://Sara-Ll.github.io/git_and_GitHub_workshop/key-points.html</loc>
+  </url>
+  <url>
+    <loc>https://Sara-Ll.github.io/git_and_GitHub_workshop/profiles.html</loc>
+  </url>
+  <url>
+    <loc>https://Sara-Ll.github.io/git_and_GitHub_workshop/reference.html</loc>
   </url>
 </urlset>
