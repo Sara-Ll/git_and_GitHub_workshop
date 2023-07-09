@@ -61,7 +61,8 @@ contact:
 episodes: 
 - introduction-to-git.Rmd
 - configuring-git.Rmd
-- initiating-a-local-git-repository.Rmd
+- initialising-a-local-git-repository.Rmd
+- tracking-our-files-with-git.Rmd
 
 # Information for Learners
 learners: 
