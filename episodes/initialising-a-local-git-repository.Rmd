@@ -1,6 +1,6 @@
 ---
 title: 'Initialising a local git repository'
-teaching: 15
+teaching: 10
 exercises: 15
 ---
 
@@ -13,8 +13,7 @@ exercises: 15
 ::::::::::::::::::::::::::::::::::::: objectives
 
 - Start a simple project
-- Initiate local git repository
-- Explain the framework and working mechanism of `git` repositories
+- Initialise local git repository
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
