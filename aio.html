@@ -224,6 +224,18 @@
 </div>
 <!--/div.accordion-flush-->
 
+<div class="accordion accordion-flush" id="accordionFlush6">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading6">
+        <a href="exploring-the-changes-with-git.html">5. Exploring the changes with git</a>
+    </div>
+<!--/div.accordion-header-->
+        
+  </div>
+<!--/div.accordion-item-->
+</div>
+<!--/div.accordion-flush-->
+
                 </div>
               </div>
             </div>
@@ -1102,7 +1114,7 @@ additional step to track the file with <code>git</code>?</p></li>
   Hints
   </h4>
 </button>
-<div id="collapseHint1" class="accordion-collapse collapse" aria-labelledby="headingHint1" data-bs-parent="#accordionHint1">
+<div id="collapseHint1" class="accordion-collapse collapse" data-bs-parent="#accordionHint1" aria-labelledby="headingHint1">
 <div class="accordion-body">
 <p>How is the name of the section where the ‘english.txt’ file appears
 after doing <code>git add</code>?</p>
@@ -1119,7 +1131,7 @@ tracking the changes? See <code>git -h</code>.</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Add the ‘english.txt’ file for tracking with <code>git</code>.</li>
@@ -1316,7 +1328,7 @@ ignore it.</p></li>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Create a file name ‘notes.txt’ and make <code>git</code> to ignore
@@ -1454,6 +1466,194 @@ Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use. 
  -->
 </div>
+</section></section><section id="aio-exploring-the-changes-with-git"><p>Content from <a href="exploring-the-changes-with-git.html">Exploring the changes with git</a></p>
+<hr>
+<p> Last updated on 2023-07-09 | 
+        
+        <a href="https://github.com/Sara-Ll/git_and_GitHub_workshop/edit/main/episodes/exploring-the-changes-with-git.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+<div class="text-end">
+          <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right"> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
+        </div>
+<div class="overview card">
+<h2 class="card-header">Overview</h2>
+<div class="row g-0">
+<div class="col-md-4">
+<div class="card-body">
+<div class="inner">
+<h3 class="card-title">Questions</h3>
+<ul>
+<li>How to see the changes in our files with <code>git</code>?</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-md-8">
+<div class="card-body">
+<div class="inner bordered">
+<h3 class="card-title">Objectives</h3>
+<ul>
+<li>Demonstrate how to see the changes we made in our files</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<section id="exploring-changes"><h2 class="section-heading">Exploring changes<a class="anchor" aria-label="anchor" href="#exploring-changes"></a>
+</h2>
+<hr class="half-width">
+<div id="challenge1" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<div class="callout-inner">
+<h3 class="callout-title">Challenge<a class="anchor" aria-label="anchor" href="#challenge1"></a>
+</h3>
+<div class="callout-content">
+<ol style="list-style-type: decimal">
+<li><p>Change “Hello!” in ‘english.txt’ by “Hi!”.</p></li>
+<li><p>Check difference with <code>git</code>.</p></li>
+<li><p>Add changes of ‘english.txt’ (without committing)</p></li>
+<li><p>Check difference. Can you see the difference? Is there an option
+to see the differences of a file in the staging area?</p></li>
+<li><p>Commit change and see if any difference is detected.
+Why?</p></li>
+</ol>
+</div>
+</div>
+</div>
+<div id="accordionHint1" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button hint-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHint1" aria-expanded="false" aria-controls="collapseHint1">
+  <h4 class="accordion-header" id="headingHint1">
+  Give me a hint
+  </h4>
+</button>
+<div id="collapseHint1" class="accordion-collapse collapse" aria-labelledby="headingHint1" data-bs-parent="#accordionHint1">
+<div class="accordion-body">
+<p>Check options in <code>git</code> with <code>git -h</code> to find a
+<code>git</code> command to show the differences.</p>
+<p>Use <code>git &lt;command&gt; -h</code> to check the options of the
+specific command.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
+  <h4 class="accordion-header" id="headingSolution1">
+  Show me the solution
+  </h4>
+</button>
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div class="accordion-body">
+<ol style="list-style-type: decimal">
+<li>Change “Hello!” in ‘english.txt’ by “Hi!”.</li>
+</ol>
+<p>Open file with a text editor in the local computer or in the terminal
+(e.g.: <code>nano english.txt</code>), and modify the line:</p>
+<p>english.txt</p>
+<pre><code>Hi!</code></pre>
+<ol start="2" style="list-style-type: decimal">
+<li>Check difference with <code>git</code>.</li>
+</ol>
+<div class="codewrapper sourceCode" id="cb2">
+<h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> diff</span></code></pre>
+</div>
+<p>Output</p>
+<pre><code>diff --git a/english.txt b/english.txt
+index 10ddd6d..663adb0 100644
+--- a/english.txt
++++ b/english.txt
+@@ -1 +1 @@
+-Hello!
++Hi!</code></pre>
+<p>The output of <code>git diff</code> might be a bit complex to
+understand and even more, with more complex changes.</p>
+<p>Here, we can easily understand the ‘english.txt’ file has change from
+a version “a” to a version “b” where the word “Hello!” has been erased
+(indicated by the minus symbol: -) and the word “Hi!” has been added in
+its place (indicated by the plus symbol: +).</p>
+<ol start="3" style="list-style-type: decimal">
+<li>Add changes of ‘english.txt’ (without committing)</li>
+</ol>
+<div class="codewrapper sourceCode" id="cb4">
+<h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add english.txt</span></code></pre>
+</div>
+<ol start="4" style="list-style-type: decimal">
+<li>Check difference. Can you see the difference? Is there an option to
+see the differences of a file in the staging area?</li>
+</ol>
+<div class="codewrapper sourceCode" id="cb5">
+<h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> diff</span></code></pre>
+</div>
+<p>It does not give any output, as it does not find any difference
+between our local file and the file in the local git repository, which
+is already added to the staging area.</p>
+<p>However, the file change has not been committed, so could we see the
+difference between the previous commited file and the changed file that
+is now in the staging area?</p>
+<div class="codewrapper sourceCode" id="cb6">
+<h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> diff <span class="at">--staged</span></span></code></pre>
+</div>
+<p>Output</p>
+<pre><code>diff --git a/english.txt b/english.txt
+index 10ddd6d..663adb0 100644
+--- a/english.txt
++++ b/english.txt
+@@ -1 +1 @@
+-Hello!
++Hi!</code></pre>
+<p>The option <code>--staged</code> allows us to see the file changes
+that we have included in the staging area but not committed yet.</p>
+<ol start="5" style="list-style-type: decimal">
+<li>Commit change and see if any difference is detected. Why?</li>
+</ol>
+<div class="codewrapper sourceCode" id="cb8">
+<h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Change english greeting to a shorter one"</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> diff</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> diff <span class="at">--staged</span></span></code></pre>
+</div>
+<p>Neither <code>git diff</code> or <code>git diff --staged</code> give
+any ouput. Why?</p>
+<p>Because there is no files in our local folder or the git staging area
+that differ from the files in the git repository.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="keypoints1" class="callout keypoints">
+<div class="callout-square">
+<i class="callout-icon" data-feather="key"></i>
+</div>
+<div class="callout-inner">
+<h3 class="callout-title">Keypoints<a class="anchor" aria-label="anchor" href="#keypoints1"></a>
+</h3>
+<div class="callout-content">
+<ul>
+<li>
+<code>git diff [--staged]</code> to see the differences between the
+files in the local git repository and our local files before or after
+adding them to the staging area.</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- 
+Place links that you need to refer to multiple times across pages here. Delete
+any links that you are not going to use. 
+ -->
 </section></section>
 </div>
     </main>
