@@ -257,7 +257,156 @@
 </div>
 <section id="starting-with-git"><h2 class="section-heading">Starting with git<a class="anchor" aria-label="anchor" href="#starting-with-git"></a>
 </h2>
-<hr class="half-width"><div id="keypoints1" class="callout keypoints">
+<hr class="half-width"><p>First, let’s check that <code>git</code> is installed:</p>
+<div class="codewrapper sourceCode" id="cb1">
+<h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> <span class="at">--version</span></span></code></pre>
+</div>
+<p>If this does not work, make sure to have follow the <a href="index.html#setup">setup instructions</a></p>
+<div class="section level3">
+<h3 id="global-configuration-of-git">Global configuration of git<a class="anchor" aria-label="anchor" href="#global-configuration-of-git"></a></h3>
+<p>Before starting to use <code>git</code> is a good idea to set up some
+global configuration parameters.</p>
+<ol style="list-style-type: decimal"><li>Check our initial global configuration with the following
+command:</li>
+</ol><div class="codewrapper sourceCode" id="cb2">
+<h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--global</span> <span class="at">--list</span></span></code></pre>
+</div>
+<ol start="2" style="list-style-type: decimal"><li>Provide our name, which will be included with every snapshot that is
+recorded with <code>git</code>. This helps to distinguish who has made
+what changes in collaborative projects:</li>
+</ol><div class="codewrapper sourceCode" id="cb3">
+<h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--global</span> user.name <span class="st">"FIRST_NAME LAST_NAME"</span></span></code></pre>
+</div>
+<ol start="3" style="list-style-type: decimal"><li>Provide an email:</li>
+</ol><div class="codewrapper sourceCode" id="cb4">
+<h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--global</span> user.email <span class="st">"email@example.com"</span></span></code></pre>
+</div>
+<ol start="4" style="list-style-type: decimal"><li>Set up a default code editor:</li>
+</ol><div class="codewrapper sourceCode" id="cb5">
+<h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--global</span> core.editor <span class="st">"EDITOR_NAME"</span></span></code></pre>
+</div>
+<p>See the following table to decide the editor to set up:</p>
+<table class="table"><colgroup><col width="27%"><col width="72%"></colgroup><thead><tr class="header"><th align="left">Editor</th>
+<th align="left">Configuration command</th>
+</tr></thead><tbody><tr class="odd"><td align="left">Atom</td>
+<td align="left"><code>$ git config --global core.editor "atom --wait"</code></td>
+</tr><tr class="even"><td align="left">nano</td>
+<td align="left"><code>$ git config --global core.editor "nano -w"</code></td>
+</tr><tr class="odd"><td align="left">BBEdit (Mac, with command line tools)</td>
+<td align="left"><code>$ git config --global core.editor "bbedit -w"</code></td>
+</tr><tr class="even"><td align="left">Sublime Text (Mac)</td>
+<td align="left"><code>$ git config --global core.editor "/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl -n -w"</code></td>
+</tr><tr class="odd"><td align="left">Sublime Text (Win, 32-bit install)</td>
+<td align="left"><code>$ git config --global core.editor "'c:/program files (x86)/sublime text 3/sublime_text.exe' -w"</code></td>
+</tr><tr class="even"><td align="left">Sublime Text (Win, 64-bit install)</td>
+<td align="left"><code>$ git config --global core.editor "'c:/program files/sublime text 3/sublime_text.exe' -w"</code></td>
+</tr><tr class="odd"><td align="left">Notepad (Win)</td>
+<td align="left"><code>$ git config --global core.editor "c:/Windows/System32/notepad.exe"</code></td>
+</tr><tr class="even"><td align="left">Notepad++ (Win, 32-bit install)</td>
+<td align="left"><code>$ git config --global core.editor "'c:/program files (x86)/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin"</code></td>
+</tr><tr class="odd"><td align="left">Notepad++ (Win, 64-bit install)</td>
+<td align="left"><code>$ git config --global core.editor "'c:/program files/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin"</code></td>
+</tr><tr class="even"><td align="left">Kate (Linux)</td>
+<td align="left"><code>$ git config --global core.editor "kate"</code></td>
+</tr><tr class="odd"><td align="left">Gedit (Linux)</td>
+<td align="left"><code>$ git config --global core.editor "gedit --wait --new-window"</code></td>
+</tr><tr class="even"><td align="left">Scratch (Linux)</td>
+<td align="left"><code>$ git config --global core.editor "scratch-text-editor"</code></td>
+</tr><tr class="odd"><td align="left">Emacs</td>
+<td align="left"><code>$ git config --global core.editor "emacs"</code></td>
+</tr><tr class="even"><td align="left">Vim</td>
+<td align="left"><code>$ git config --global core.editor "vim"</code></td>
+</tr><tr class="odd"><td align="left">VS Code</td>
+<td align="left"><code>$ git config --global core.editor "code --wait"</code></td>
+</tr></tbody></table><p>Source: <a href="https://swcarpentry.github.io/git-novice/02-setup.html" class="external-link">Software
+carpentry</a></p>
+<div id="callout1" class="callout callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<div class="callout-inner">
+<h3 class="callout-title">Callout<a class="anchor" aria-label="anchor" href="#callout1"></a>
+</h3>
+<div class="callout-content">
+<p>If you are not familiar with using a text editor in the terminal, the
+easiest one to start with is <code>nano</code>. To start
+<code>nano</code>, you can type:</p>
+<div class="codewrapper sourceCode" id="cb6">
+<h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">nano</span> FILE_NAME</span></code></pre>
+</div>
+<p>Then you will see a couple of bottom lines indicating the options,
+such as <code>^X Exit</code> (the “^” means to press Ctrl).</p>
+</div>
+</div>
+</div>
+<div id="n.b." class="callout testimonial">
+<div class="callout-square">
+<i class="callout-icon" data-feather="heart"></i>
+</div>
+<div id="n.b." class="callout-inner">
+<h3 class="callout-title">N.B.<a class="anchor" aria-label="anchor" href="#n.b."></a>
+</h3>
+<div class="callout-content">
+<p>All this configuration can be re-set at any time point with the same
+commands (e.g., change the email or the default code editor)</p>
+</div>
+</div>
+</div>
+<div id="configure-your-git" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<div id="configure-your-git" class="callout-inner">
+<h3 class="callout-title">Configure your <code>git</code><a class="anchor" aria-label="anchor" href="#configure-your-git"></a>
+</h3>
+<div class="callout-content">
+<p>Use the above commands to configure your <code>git</code>.</p>
+</div>
+</div>
+</div>
+<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
+  <h4 class="accordion-header" id="headingSolution1">
+  My example
+  </h4>
+</button>
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div class="accordion-body">
+<div class="codewrapper sourceCode" id="cb7">
+<h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--global</span> user.name <span class="st">"Sara Ll"</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--global</span> user.email <span class="st">"SLl@email.com"</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--global</span> core.editor <span class="st">"vim"</span></span></code></pre>
+</div>
+<p>Checking my global configuration set up:</p>
+<div class="codewrapper sourceCode" id="cb8">
+<h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--global</span> <span class="at">--list</span></span></code></pre>
+</div>
+<p>Output:</p>
+<pre><code>user.email=SLl@email.com
+user.name=Sara Ll
+core.editor=vim</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
 <i class="callout-icon" data-feather="key"></i>
 </div>
@@ -276,6 +425,7 @@ configuration</li>
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use. 
  -->
+</div>
 </section></div> <!-- / div.lesson-content -->
     </main><!-- / main#main-content.main-content --><nav class="bottom-pagination mx-md-4" aria-label="Previous and Next Chapter"><div class="d-block d-sm-block d-md-none">
         <a class="chapter-link" href="introduction-to-git.html"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous</a>
