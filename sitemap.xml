@@ -22,6 +22,9 @@
     <loc>https://Sara-Ll.github.io/git_and_GitHub_workshop/index.html</loc>
   </url>
   <url>
+    <loc>https://Sara-Ll.github.io/git_and_GitHub_workshop/initialising-a-local-git-repository.html</loc>
+  </url>
+  <url>
     <loc>https://Sara-Ll.github.io/git_and_GitHub_workshop/instructor/404.html</loc>
   </url>
   <url>
@@ -43,6 +46,9 @@
     <loc>https://Sara-Ll.github.io/git_and_GitHub_workshop/instructor/index.html</loc>
   </url>
   <url>
+    <loc>https://Sara-Ll.github.io/git_and_GitHub_workshop/instructor/initialising-a-local-git-repository.html</loc>
+  </url>
+  <url>
     <loc>https://Sara-Ll.github.io/git_and_GitHub_workshop/instructor/instructor-notes.html</loc>
   </url>
   <url>
@@ -61,6 +67,9 @@
     <loc>https://Sara-Ll.github.io/git_and_GitHub_workshop/instructor/reference.html</loc>
   </url>
   <url>
+    <loc>https://Sara-Ll.github.io/git_and_GitHub_workshop/instructor/tracking-our-files-with-git.html</loc>
+  </url>
+  <url>
     <loc>https://Sara-Ll.github.io/git_and_GitHub_workshop/instructor-notes.html</loc>
   </url>
   <url>
@@ -77,5 +86,8 @@
   </url>
   <url>
     <loc>https://Sara-Ll.github.io/git_and_GitHub_workshop/reference.html</loc>
+  </url>
+  <url>
+    <loc>https://Sara-Ll.github.io/git_and_GitHub_workshop/tracking-our-files-with-git.html</loc>
   </url>
 </urlset>
