@@ -246,6 +246,18 @@
 </div>
 <!--/div.accordion-flush-->
 
+<div class="accordion accordion-flush" id="accordionFlush8">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading8">
+        <a href="rewriting-the-history.html">7. Rewriting the history</a>
+    </div>
+<!--/div.accordion-header-->
+        
+  </div>
+<!--/div.accordion-item-->
+</div>
+<!--/div.accordion-flush-->
+
                 </div>
               </div>
             </div>
@@ -344,6 +356,18 @@ of the local <code>git</code> repository</li>
 <li>
 <code>git show [&lt;commit-hash&gt;][:&lt;file&gt;]</code> to show
 changes and past files</li>
+</ul></section><section id="rewriting-the-history"><h2 class="section-heading"><a href="rewriting-the-history.html">Rewriting the history</a></h2>
+<hr class="half-width">
+<ul>
+<li>
+<code>git restore [--staged] &lt;file&gt;</code> to discard changes
+in working directory or to unstage files</li>
+<li>
+<code>git reset --soft HEAD^</code> to remove the previous commit
+from the history</li>
+<li>
+<code>git revert [--no-edit] &lt;commit-hash&gt;</code> to create a
+new commit which undoes the changes of the the specified commit</li>
 </ul></section>
 </div>
     </main>

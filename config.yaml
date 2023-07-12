@@ -65,6 +65,7 @@ episodes:
 - tracking-our-files-with-git.Rmd
 - exploring-the-changes-with-git.Rmd
 - the-history-of-our-local-git-repository.Rmd
+- rewriting-the-history.Rmd
 
 # Information for Learners
 learners: 
