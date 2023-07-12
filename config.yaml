@@ -64,6 +64,7 @@ episodes:
 - initialising-a-local-git-repository.Rmd
 - tracking-our-files-with-git.Rmd
 - exploring-the-changes-with-git.Rmd
+- the-history-of-our-local-git-repository.Rmd
 
 # Information for Learners
 learners: 

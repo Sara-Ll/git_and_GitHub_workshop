@@ -236,6 +236,18 @@
 </div>
 <!--/div.accordion-flush-->
 
+<div class="accordion accordion-flush" id="accordionFlush7">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading7">
+        <a href="the-history-of-our-local-git-repository.html">6. The history of our local git repository</a>
+    </div>
+<!--/div.accordion-header-->
+        
+  </div>
+<!--/div.accordion-item-->
+</div>
+<!--/div.accordion-flush-->
+
                 </div>
               </div>
             </div>
@@ -727,7 +739,7 @@ language.</p></li>
   Hint for novice coders
   </h4>
 </button>
-<div id="collapseHint1" class="accordion-collapse collapse" aria-labelledby="headingHint1" data-bs-parent="#accordionHint1">
+<div id="collapseHint1" class="accordion-collapse collapse" data-bs-parent="#accordionHint1" aria-labelledby="headingHint1">
 <div class="accordion-body">
 <p><code>pwd</code> to print working directory. It prints the folder
 path you are currently at in the terminal</p>
@@ -757,7 +769,7 @@ full path (e.g.: <code>/Users/sll/greetings</code> is equivalent to
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Open the terminal and navigate to a directory to save the
@@ -833,7 +845,7 @@ the line of this file.</p></li>
   Hint for novice coders
   </h4>
 </button>
-<div id="collapseHint2" class="accordion-collapse collapse" aria-labelledby="headingHint2" data-bs-parent="#accordionHint2">
+<div id="collapseHint2" class="accordion-collapse collapse" data-bs-parent="#accordionHint2" aria-labelledby="headingHint2">
 <div class="accordion-body">
 <p><code>with open(&lt;filename.txt&gt;, "r") as file:</code> to open
 the ‘english.txt’ file</p>
@@ -851,7 +863,7 @@ file</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Create the file ‘english.txt’ that contains “Hello”.</li>
@@ -941,7 +953,7 @@ Horst</a> (see more of her data science &amp; statistics artwork <a href="https:
   Hint for novice coders
   </h4>
 </button>
-<div id="collapseHint3" class="accordion-collapse collapse" aria-labelledby="headingHint3" data-bs-parent="#accordionHint3">
+<div id="collapseHint3" class="accordion-collapse collapse" data-bs-parent="#accordionHint3" aria-labelledby="headingHint3">
 <div class="accordion-body">
 <p><code>ls</code> to list files. Use an additional option to see hidden
 files, you can see the options in the manual by typing:
@@ -959,7 +971,7 @@ files, you can see the options in the manual by typing:
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Check hidden files.</li>
@@ -1654,6 +1666,344 @@ adding them to the staging area.</li>
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use. 
  -->
+</section></section><section id="aio-the-history-of-our-local-git-repository"><p>Content from <a href="the-history-of-our-local-git-repository.html">The history of our local git repository</a></p>
+<hr>
+<p> Last updated on 2023-07-12 | 
+        
+        <a href="https://github.com/Sara-Ll/git_and_GitHub_workshop/edit/main/episodes/the-history-of-our-local-git-repository.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+<div class="text-end">
+          <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right"> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
+        </div>
+<div class="overview card">
+<h2 class="card-header">Overview</h2>
+<div class="row g-0">
+<div class="col-md-4">
+<div class="card-body">
+<div class="inner">
+<h3 class="card-title">Questions</h3>
+<ul>
+<li>How do you see the history of the local <code>git</code>
+repository?</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-md-8">
+<div class="card-body">
+<div class="inner bordered">
+<h3 class="card-title">Objectives</h3>
+<ul>
+<li>Check out the history of the local <code>git</code> repository</li>
+<li>Inspect the changes of previous commits</li>
+<li>Visualise previous versions of files</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<section id="the-history-of-the-local-git-repository"><h2 class="section-heading">The history of the local <code>git</code> repository<a class="anchor" aria-label="anchor" href="#the-history-of-the-local-git-repository"></a>
+</h2>
+<hr class="half-width">
+<div id="challenge1" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<div class="callout-inner">
+<h3 class="callout-title">Challenge<a class="anchor" aria-label="anchor" href="#challenge1"></a>
+</h3>
+<div class="callout-content">
+<p>Can you find a <code>git</code> command to check the commits we have
+done until now?</p>
+</div>
+</div>
+</div>
+<div id="accordionHint1" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button hint-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHint1" aria-expanded="false" aria-controls="collapseHint1">
+  <h4 class="accordion-header" id="headingHint1">
+  Give me a hint
+  </h4>
+</button>
+<div id="collapseHint1" class="accordion-collapse collapse" aria-labelledby="headingHint1" data-bs-parent="#accordionHint1">
+<div class="accordion-body">
+<p>Check the possible <code>git</code> commands with
+<code>git -h</code>.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
+  <h4 class="accordion-header" id="headingSolution1">
+  Show me the solution
+  </h4>
+</button>
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div class="accordion-body">
+<div class="codewrapper sourceCode" id="cb1">
+<h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> log</span></code></pre>
+</div>
+<p>Output</p>
+<pre><code>commit f41333befb44c0ea46952b9ddeb00aeb85e96bf0 (HEAD -&gt; main)
+Author: Sara Llorente-Armijo &lt;sl6820@ic.ac.uk&gt;
+Date:   Sun Jul 9 23:14:20 2023 +0100
+
+    Change english greeting to a shorter one
+
+commit 77d1ea1918c02ecb2a302804c90f9d5011d5eedf
+Author: Sara Llorente-Armijo &lt;sl6820@ic.ac.uk&gt;
+Date:   Sun Jul 9 21:14:15 2023 +0100
+
+    Ignore data folder
+
+commit 745383c7ffc2c131392b657b9d1052a0894b8b4a
+Author: Sara Llorente-Armijo &lt;sl6820@ic.ac.uk&gt;
+Date:   Sun Jul 9 21:10:03 2023 +0100
+
+    Add .gitignore file
+
+commit 4f8ab7d267b5deab26f18bcd71ec613f0d43e7f4
+Author: Sara Llorente-Armijo &lt;sl6820@ic.ac.uk&gt;
+Date:   Sun Jul 9 19:39:50 2023 +0100
+
+    Add greetings.py script
+
+commit bf0b837d8a43b407e1536c9654c51e063cfe8456
+Author: Sara Llorente-Armijo &lt;sl6820@ic.ac.uk&gt;
+Date:   Sun Jul 9 19:37:40 2023 +0100
+
+    Add english.txt file</code></pre>
+</div>
+</div>
+</div>
+</div>
+<p>Checking the history of our commits gives the following information
+for each commit we did in our repository:</p>
+<pre><code>commit f41333befb44c0ea46952b9ddeb00aeb85e96bf0 (HEAD -&gt; main)
+Author: Sara Llorente-Armijo &lt;sl6820@ic.ac.uk&gt;
+Date:   Sun Jul 9 23:14:20 2023 +0100
+
+    Change english greeting to a shorter one</code></pre>
+<ol style="list-style-type: decimal">
+<li>A commit hash: a string of numbers and letters that uniquely
+identifies a specific commit.</li>
+</ol>
+<div id="callout1" class="callout callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<div class="callout-inner">
+<h3 class="callout-title">Callout<a class="anchor" aria-label="anchor" href="#callout1"></a>
+</h3>
+<div class="callout-content">
+<p>Commit hash are important to refer to a specific commit and to check
+the files of that previous version.</p>
+<p>Normally, it is enough to refer to the fist 5 or 6 elements of the
+hash, as it is very unlikely that two commit hashes of our repository
+have an identical start.</p>
+</div>
+</div>
+</div>
+<ol start="2" style="list-style-type: decimal">
+<li><p>Name and email (the ones we configure at the beginning, see <a href="configuring-git.html">here</a>). If it is a collaborative project
+where several people is making commits, it helps to keep track of who
+made each specific change.</p></li>
+<li><p>Date and time of the commit.</p></li>
+<li><p>The message of the commit.</p></li>
+</ol>
+<p>Sometimes, we don’t need to have all the information of each commit
+and so many lines of output per commit (especially when we have many
+commits in the history of our repository). We can have a shorter version
+of the history of our repository with just one line per commit by adding
+the option <code>--oneline</code>.</p>
+<p>Output</p>
+<pre><code>f41333b (HEAD -&gt; main) Change english greeting to a shorter one
+77d1ea1 Ignore data folder
+745383c Add .gitignore file
+4f8ab7d Add greetings.py script
+bf0b837 Add english.txt file</code></pre>
+<p>Here, we get the first 7 characters of the commit hash followed by
+the commit message.</p>
+<div id="callout2" class="callout callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<div class="callout-inner">
+<h3 class="callout-title">Callout<a class="anchor" aria-label="anchor" href="#callout2"></a>
+</h3>
+<div class="callout-content">
+<p>You can see here the importance of providing meaningful messages to
+each commit, so that in case we need to go back and look for a specific
+change we did, we can easily locate the commit.</p>
+</div>
+</div>
+</div>
+<div id="discussion1" class="callout discussion">
+<div class="callout-square">
+<i class="callout-icon" data-feather="message-circle"></i>
+</div>
+<div class="callout-inner">
+<h3 class="callout-title">Discussion<a class="anchor" aria-label="anchor" href="#discussion1"></a>
+</h3>
+<div class="callout-content">
+<p>You might have notice the <code>(HEAD -&gt; main)</code> string that
+appears in the history of our repository next to the last commit we did.
+We will explain what this means in our episode about branches (include
+ref here later).</p>
+</div>
+</div>
+</div>
+</section><section id="inspect-the-changes-and-files-of-past-commits"><h2 class="section-heading">Inspect the changes and files of past commits<a class="anchor" aria-label="anchor" href="#inspect-the-changes-and-files-of-past-commits"></a>
+</h2>
+<hr class="half-width">
+<div id="exercise" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<div id="exercise" class="callout-inner">
+<h3 class="callout-title">Exercise<a class="anchor" aria-label="anchor" href="#exercise"></a>
+</h3>
+<div class="callout-content">
+<ol style="list-style-type: decimal">
+<li><p>Show the difference between the last commit and the previous file
+version.</p></li>
+<li><p>Can you see the differences of more past commits?</p></li>
+<li><p>Visualise the first version of the ‘english.txt’ file.</p></li>
+</ol>
+</div>
+</div>
+</div>
+<div id="accordionHint2" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button hint-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHint2" aria-expanded="false" aria-controls="collapseHint2">
+  <h4 class="accordion-header" id="headingHint2">
+  Give me a hint
+  </h4>
+</button>
+<div id="collapseHint2" class="accordion-collapse collapse" aria-labelledby="headingHint2" data-bs-parent="#accordionHint2">
+<div class="accordion-body">
+<p>Check the possible <code>git</code> commands with
+<code>git -h</code>. (Notice the word I use in the exercise ;) )</p>
+</div>
+</div>
+</div>
+</div>
+<div id="accordionSolution2" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
+  <h4 class="accordion-header" id="headingSolution2">
+  Show me the solution
+  </h4>
+</button>
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div class="accordion-body">
+<ol style="list-style-type: decimal">
+<li>Show the difference between the last commit and the previous file
+version.</li>
+</ol>
+<div class="codewrapper sourceCode" id="cb5">
+<h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> show</span></code></pre>
+</div>
+<p>Output</p>
+<pre><code>commit f41333befb44c0ea46952b9ddeb00aeb85e96bf0 (HEAD -&gt; main)
+Author: Sara Llorente-Armijo &lt;sl6820@ic.ac.uk&gt;
+Date:   Sun Jul 9 23:14:20 2023 +0100
+
+    Change english greeting to a shorter one
+
+diff --git a/english.txt b/english.txt
+index 10ddd6d..663adb0 100644
+--- a/english.txt
++++ b/english.txt
+@@ -1 +1 @@
+-Hello!
++Hi!</code></pre>
+<ol start="2" style="list-style-type: decimal">
+<li>Can you see the differences of more past commits?</li>
+</ol>
+<p>Yes, we can give a commit hash to <code>git show</code> command.
+(Make sure to use your own commit hash)</p>
+<div class="codewrapper sourceCode" id="cb7">
+<h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> show 77d1ea1</span></code></pre>
+</div>
+<p>Output</p>
+<pre><code>commit 77d1ea1918c02ecb2a302804c90f9d5011d5eedf
+Author: Sara Llorente-Armijo &lt;sl6820@ic.ac.uk&gt;
+Date:   Sun Jul 9 21:14:15 2023 +0100
+
+    Ignore data folder
+
+diff --git a/.gitignore b/.gitignore
+index 99ed0d4..ea10e48 100644
+--- a/.gitignore
++++ b/.gitignore
+@@ -1 +1,2 @@
+ notes.txt
++data/</code></pre>
+<ol start="3" style="list-style-type: decimal">
+<li>Visualise the first version of the ‘english.txt’ file.</li>
+</ol>
+<p>We can even visualise the previous version of a file by following the
+commit hash with two colons and the filename:
+<code>[&lt;commit-hash&gt;][:&lt;file&gt;]</code></p>
+<div class="codewrapper sourceCode" id="cb9">
+<h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> show bf0b837:english.txt</span></code></pre>
+</div>
+<p>Output</p>
+<pre><code>Hello!</code></pre>
+<p>This is different from our current ‘english.txt’ file as you can see
+(e.g., use <code>cat english.txt</code>)</p>
+<pre><code>Hi!</code></pre>
+<div id="callout3" class="callout callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<div class="callout-inner">
+<h3 class="callout-title">Callout<a class="anchor" aria-label="anchor" href="#callout3"></a>
+</h3>
+<div class="callout-content">
+<p>N.B., this works just with plain text files, but no other files like
+word files. Or at least, it won’t be a meaningful output.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="keypoints1" class="callout keypoints">
+<div class="callout-square">
+<i class="callout-icon" data-feather="key"></i>
+</div>
+<div class="callout-inner">
+<h3 class="callout-title">Keypoints<a class="anchor" aria-label="anchor" href="#keypoints1"></a>
+</h3>
+<div class="callout-content">
+<ul>
+<li>
+<code>git log [--oneline]</code> to show the history of the commits
+of the local <code>git</code> repository</li>
+<li>
+<code>git show [&lt;commit-hash&gt;][:&lt;file&gt;]</code> to show
+changes and past files</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- 
+Place links that you need to refer to multiple times across pages here. Delete
+any links that you are not going to use. 
+ -->
 </section></section>
 </div>
     </main>
@@ -1703,8 +2053,8 @@ any links that you are not going to use.
   "url": "https://Sara-Ll.github.io/git_and_GitHub_workshop/aio.html",
   "identifier": "https://Sara-Ll.github.io/git_and_GitHub_workshop/aio.html",
   "dateCreated": "2023-07-08",
-  "dateModified": "2023-07-11",
-  "datePublished": "2023-07-11"
+  "dateModified": "2023-07-12",
+  "datePublished": "2023-07-12"
 }
 
   </script><script>
