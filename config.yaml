@@ -66,6 +66,7 @@ episodes:
 - exploring-the-changes-with-git.Rmd
 - the-history-of-our-local-git-repository.Rmd
 - rewriting-the-history.Rmd
+- creating-branches.Rmd
 
 # Information for Learners
 learners: 
