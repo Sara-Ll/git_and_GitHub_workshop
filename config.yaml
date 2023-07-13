@@ -69,6 +69,7 @@ episodes:
 - creating-branches.Rmd
 - creating-a-remote-repository-in-github.Rmd
 - getting-changes-from-a-remote-repository.Rmd
+- good-practices-in-a-github-repository.Rmd
 
 # Information for Learners
 learners: 
