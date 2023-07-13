@@ -28,6 +28,7 @@ This workshop requires to have `git` installed and a GitHub account. Follow the 
 ::::::::::::::::::::::::::: checklist
 - [ ] Install git
 - [ ] Create an account in GitHub
+- [ ] Authorize your computer to access GitHub
 :::::::::::::::::::::::::::::::::::::
 
 
@@ -126,3 +127,21 @@ Set up your free github account:
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::
 
+
+
+::::::::::::::::::::::::::::::::::::::: challenge
+
+### Authorize your computer to access GitHub
+
+[Check if you have a key that is being used](https://docs.github.com/en/authentication/troubleshooting-ssh/error-permission-denied-publickey#make-sure-you-have-a-key-that-is-being-used)
+
+If you have one:
+
+ 1. [Add your SSH key to the ssh-agent](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#adding-your-ssh-key-to-the-ssh-agent)
+
+If you don't have one:
+
+1. [Generate a new ssh key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#generating-a-new-ssh-key)
+2. [Add your SSH key to the ssh-agent](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#adding-your-ssh-key-to-the-ssh-agent)
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::
