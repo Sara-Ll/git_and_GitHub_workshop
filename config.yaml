@@ -33,7 +33,7 @@ source: 'https://github.com/Sara-Ll/git_and_GitHub_workshop'
 branch: 'main'
 
 # Who to contact if there are any issues
-contact:
+contact: 
 
 # Navigation ------------------------------------------------
 #
@@ -58,7 +58,7 @@ contact:
 # - another-learner.md
 
 # Order of episodes in your lesson
-episodes:
+episodes: 
 - introduction-to-git.Rmd
 - configuring-git.Rmd
 - initialising-a-local-git-repository.Rmd
@@ -68,15 +68,16 @@ episodes:
 - rewriting-the-history.Rmd
 - creating-branches.Rmd
 - creating-a-remote-repository-in-github.Rmd
+- getting-changes-from-a-remote-repository.Rmd
 
 # Information for Learners
-learners:
+learners: 
 
 # Information for Instructors
-instructors:
+instructors: 
 
 # Learner Profiles
-profiles:
+profiles: 
 
 # Customisation ---------------------------------------------
 #
