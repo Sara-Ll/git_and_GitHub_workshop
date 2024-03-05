@@ -413,7 +413,8 @@ files?</p>
 <p>Version control systems allow you to effortlessly track changes and
 have the security that you can always roll back to previous versions of
 your documents and code.</p>
-<figure><img src="../fig/TW-project-history.svg" alt="" class="figure mx-auto d-block"><figcaption>Source: The Turing Way</figcaption></figure></section><section id="version-control-with-git"><h2 class="section-heading">Version control with <code>git</code><a class="anchor" aria-label="anchor" href="#version-control-with-git"></a>
+<figure><img src="../fig/TW-project-history.svg" alt="Source: The Turing Way" class="figure mx-auto d-block"><div class="figcaption">Source: The Turing Way</div>
+</figure></section><section id="version-control-with-git"><h2 class="section-heading">Version control with <code>git</code><a class="anchor" aria-label="anchor" href="#version-control-with-git"></a>
 </h2>
 <hr class="half-width">
 <p><code>git</code> is a widely-used version control system.</p>
@@ -524,7 +525,7 @@ any links that you are not going to use.
 <div class="codewrapper sourceCode" id="cb1">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> <span class="at">--version</span></span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="fu">git</span> <span class="at">--version</span></span></code></pre>
 </div>
 <p>If this does not work, make sure to have follow the <a href="index.html#setup">setup instructions</a></p>
 <div class="section level3">
@@ -539,7 +540,7 @@ command:</li>
 <div class="codewrapper sourceCode" id="cb2">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--global</span> <span class="at">--list</span></span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--global</span> <span class="at">--list</span></span></code></pre>
 </div>
 <ol start="2" style="list-style-type: decimal">
 <li>Provide our name, which will be included with every snapshot that is
@@ -549,7 +550,7 @@ what changes in collaborative projects:</li>
 <div class="codewrapper sourceCode" id="cb3">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--global</span> user.name <span class="st">"FIRST_NAME LAST_NAME"</span></span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--global</span> user.name <span class="st">"FIRST_NAME LAST_NAME"</span></span></code></pre>
 </div>
 <ol start="3" style="list-style-type: decimal">
 <li>Provide an email:</li>
@@ -557,7 +558,7 @@ what changes in collaborative projects:</li>
 <div class="codewrapper sourceCode" id="cb4">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--global</span> user.email <span class="st">"email@example.com"</span></span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--global</span> user.email <span class="st">"email@example.com"</span></span></code></pre>
 </div>
 <ol start="4" style="list-style-type: decimal">
 <li>Set up a default code editor:</li>
@@ -565,7 +566,7 @@ what changes in collaborative projects:</li>
 <div class="codewrapper sourceCode" id="cb5">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--global</span> core.editor <span class="st">"EDITOR_NAME"</span></span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--global</span> core.editor <span class="st">"EDITOR_NAME"</span></span></code></pre>
 </div>
 <p>See the following table to decide the editor to set up:</p>
 <table class="table">
@@ -642,13 +643,12 @@ what changes in collaborative projects:</li>
 </table>
 <p>Source: <a href="https://swcarpentry.github.io/git-novice/02-setup.html" class="external-link">Software
 carpentry</a></p>
-<div id="callout1" class="callout callout">
+<div id="callout1" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div class="callout-inner">
-<h3 class="callout-title">Callout<a class="anchor" aria-label="anchor" href="#callout1"></a>
-</h3>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title">Callout</h3>
 <div class="callout-content">
 <p>If you are not familiar with using a text editor in the terminal, the
 easiest one to start with is <code>nano</code>. To start
@@ -656,7 +656,7 @@ easiest one to start with is <code>nano</code>. To start
 <div class="codewrapper sourceCode" id="cb6">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">nano</span> FILE_NAME</span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" tabindex="-1"></a><span class="fu">nano</span> FILE_NAME</span></code></pre>
 </div>
 <p>Then you will see a couple of bottom lines indicating the options,
 such as <code>^X Exit</code> (the “^” means to press Ctrl).</p>
@@ -693,20 +693,20 @@ commands (e.g., change the email or the default code editor)</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1">My example</h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb7">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--global</span> user.name <span class="st">"Sara Ll"</span></span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--global</span> user.email <span class="st">"SLl@email.com"</span></span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--global</span> core.editor <span class="st">"vim"</span></span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--global</span> user.name <span class="st">"Sara Ll"</span></span>
+<span id="cb7-2"><a href="#cb7-2" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--global</span> user.email <span class="st">"SLl@email.com"</span></span>
+<span id="cb7-3"><a href="#cb7-3" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--global</span> core.editor <span class="st">"vim"</span></span></code></pre>
 </div>
 <p>Checking my global configuration set up:</p>
 <div class="codewrapper sourceCode" id="cb8">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--global</span> <span class="at">--list</span></span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--global</span> <span class="at">--list</span></span></code></pre>
 </div>
 <p>Output:</p>
 <pre><code>user.email=SLl@email.com
@@ -817,7 +817,7 @@ full path (e.g.: <code>/Users/sll/greetings</code> is equivalent to
 <div class="codewrapper sourceCode" id="cb1">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> <span class="at">--version</span> <span class="co"># or python --version</span></span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="ex">python3</span> <span class="at">--version</span> <span class="co"># or python --version</span></span></code></pre>
 </div>
 <p>Make sure it gives a version 3 of python (first number is 3):
 <code>Python 3.#.#</code></p>
@@ -841,7 +841,7 @@ project.</li>
 <div class="codewrapper sourceCode" id="cb2">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> ~</span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a><span class="bu">cd</span> ~</span></code></pre>
 </div>
 <ol start="2" style="list-style-type: decimal">
 <li>Create a folder for the project and enter into it.</li>
@@ -849,8 +849,8 @@ project.</li>
 <div class="codewrapper sourceCode" id="cb3">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mkdir</span> greetings</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> greetings</span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a><span class="fu">mkdir</span> greetings</span>
+<span id="cb3-2"><a href="#cb3-2" tabindex="-1"></a><span class="bu">cd</span> greetings</span></code></pre>
 </div>
 <ol start="3" style="list-style-type: decimal">
 <li>Create a python script that asks the user to input a language.</li>
@@ -860,9 +860,9 @@ project.</li>
 <div class="codewrapper sourceCode" id="cb4">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Greetings script</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>language <span class="op">=</span> <span class="bu">input</span>(<span class="st">"Language?: "</span>)</span></code></pre>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" tabindex="-1"></a><span class="co"># Greetings script</span></span>
+<span id="cb4-2"><a href="#cb4-2" tabindex="-1"></a></span>
+<span id="cb4-3"><a href="#cb4-3" tabindex="-1"></a>language <span class="op">=</span> <span class="bu">input</span>(<span class="st">"Language?: "</span>)</span></code></pre>
 </div>
 <ol start="4" style="list-style-type: decimal">
 <li>Execute the python script.</li>
@@ -870,7 +870,7 @@ project.</li>
 <div class="codewrapper sourceCode" id="cb5">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> greetings.py</span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" tabindex="-1"></a><span class="ex">python3</span> greetings.py</span></code></pre>
 </div>
 <p>Output:</p>
 <pre><code>Language?: &lt;type and press enter&gt;</code></pre>
@@ -939,13 +939,13 @@ the last lines:</p>
 <div class="codewrapper sourceCode" id="cb8">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Greetings script</span></span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>language <span class="op">=</span> <span class="bu">input</span>(<span class="st">"Language?: "</span>)</span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(<span class="st">"english.txt"</span>, <span class="st">"r"</span>) <span class="im">as</span> <span class="bu">file</span>:</span>
-<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>    greeting <span class="op">=</span> <span class="bu">file</span>.read()</span>
-<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(greeting)</span></code></pre>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" tabindex="-1"></a><span class="co"># Greetings script</span></span>
+<span id="cb8-2"><a href="#cb8-2" tabindex="-1"></a></span>
+<span id="cb8-3"><a href="#cb8-3" tabindex="-1"></a>language <span class="op">=</span> <span class="bu">input</span>(<span class="st">"Language?: "</span>)</span>
+<span id="cb8-4"><a href="#cb8-4" tabindex="-1"></a></span>
+<span id="cb8-5"><a href="#cb8-5" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(<span class="st">"english.txt"</span>, <span class="st">"r"</span>) <span class="im">as</span> <span class="bu">file</span>:</span>
+<span id="cb8-6"><a href="#cb8-6" tabindex="-1"></a>    greeting <span class="op">=</span> <span class="bu">file</span>.read()</span>
+<span id="cb8-7"><a href="#cb8-7" tabindex="-1"></a>    <span class="bu">print</span>(greeting)</span></code></pre>
 </div>
 <ol start="3" style="list-style-type: decimal">
 <li>Execute the python script.</li>
@@ -953,7 +953,7 @@ the last lines:</p>
 <div class="codewrapper sourceCode" id="cb9">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> greetings.py</span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" tabindex="-1"></a><span class="ex">python3</span> greetings.py</span></code></pre>
 </div>
 <p>Output:</p>
 <pre><code>Language?: &lt;type and press enter&gt;
@@ -963,12 +963,12 @@ Hello!</code></pre>
 </div>
 </div>
 </div>
-<div id="n.b." class="callout callout">
+<div id="callout1" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="n.b." class="callout-inner">
-<h3 class="callout-title">N.B.<a class="anchor" aria-label="anchor" href="#n.b."></a>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="n-b-">N.B.<a class="anchor" aria-label="anchor" href="#n-b-"></a>
 </h3>
 <div class="callout-content">
 <p>You might have noticed that it does not matter what you type but it
@@ -983,7 +983,9 @@ up our progress, let’s git our project to track the changes!</p>
 </h3>
 <p>Let’s start our adventure in <code>git</code> to track the changes in
 our small project.</p>
-<figure><img src="../fig/AH-gitInit.jpeg" alt="" class="figure mx-auto d-block"><figcaption>Let’s embark in the <code>git</code> adventure! (<a href="https://allisonhorst.com/git-github" class="external-link">Artwork</a> by <a href="https://twitter.com/allison_horst" class="external-link">Allison Horst</a>)</figcaption></figure><p>We will use the analogy with climbing to explain <code>git</code>
+<figure><img src="../fig/AH-gitInit.jpeg" alt="Let’s embark in the git adventure! (Artwork by Allison Horst)" class="figure mx-auto d-block"><div class="figcaption">Let’s embark in the <code>git</code> adventure!
+(<a href="https://allisonhorst.com/git-github" class="external-link">Artwork</a> by <a href="https://twitter.com/allison_horst" class="external-link">Allison Horst</a>)</div>
+</figure><p>We will use the analogy with climbing to explain <code>git</code>
 with the <a href="https://allisonhorst.com/git-github" class="external-link">amazing
 illustrations</a> by <a href="https://twitter.com/allison_horst" class="external-link">Allison
 Horst</a> (see more of her data science &amp; statistics artwork <a href="https://allisonhorst.com/allison-horst" class="external-link">here</a>)</p>
@@ -1033,7 +1035,7 @@ files, you can see the options in the manual by typing:
 <div class="codewrapper sourceCode" id="cb11">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ls</span> <span class="at">-a</span></span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" tabindex="-1"></a><span class="fu">ls</span> <span class="at">-a</span></span></code></pre>
 </div>
 <p>Output:</p>
 <pre><code>.            ..           english.txt  greetings.py</code></pre>
@@ -1043,7 +1045,7 @@ files, you can see the options in the manual by typing:
 <div class="codewrapper sourceCode" id="cb13">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> init</span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1" tabindex="-1"></a><span class="fu">git</span> init</span></code></pre>
 </div>
 <p>Output:</p>
 <pre><code>Initialized empty Git repository in /Users/sll/greetings/.git/</code></pre>
@@ -1054,7 +1056,7 @@ files, you can see the options in the manual by typing:
 <div class="codewrapper sourceCode" id="cb15">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ls</span> <span class="at">-a</span></span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb15-1"><a href="#cb15-1" tabindex="-1"></a><span class="fu">ls</span> <span class="at">-a</span></span></code></pre>
 </div>
 <p>Output</p>
 <pre><code>.            ..           .git         english.txt  greetings.py</code></pre>
@@ -1063,12 +1065,13 @@ will record the changes of our repository.</p>
 <ol start="4" style="list-style-type: decimal">
 <li>Check the status of our repository.</li>
 </ol>
-<figure><img src="../fig/AH-gitStatus.jpeg" alt="" class="figure mx-auto d-block"><figcaption>Once we arrived to the climbing area, we need to
+<figure><img src="../fig/AH-gitStatus.jpeg" alt="Once we arrived to the climbing area, we need to check the routes! The same way, once we initialised our git repository, we need to check it out with git status (Artwork by Allison Horst)" class="figure mx-auto d-block"><div class="figcaption">Once we arrived to the climbing area, we need to
 check the routes! The same way, once we initialised our git repository,
-we need to check it out with <code>git status</code> (<a href="https://allisonhorst.com/git-github" class="external-link">Artwork</a> by <a href="https://twitter.com/allison_horst" class="external-link">Allison Horst</a>)</figcaption></figure><div class="codewrapper sourceCode" id="cb17">
+we need to check it out with <code>git status</code> (<a href="https://allisonhorst.com/git-github" class="external-link">Artwork</a> by <a href="https://twitter.com/allison_horst" class="external-link">Allison Horst</a>)</div>
+</figure><div class="codewrapper sourceCode" id="cb17">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> status</span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb17-1"><a href="#cb17-1" tabindex="-1"></a><span class="fu">git</span> status</span></code></pre>
 </div>
 <p>Output</p>
 <pre><code>On branch main
@@ -1179,7 +1182,7 @@ additional step to track the file with <code>git</code>?</p></li>
 <button class="accordion-button hint-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHint1" aria-expanded="false" aria-controls="collapseHint1">
   <h4 class="accordion-header" id="headingHint1">Hints</h4>
 </button>
-<div id="collapseHint1" class="accordion-collapse collapse" aria-labelledby="headingHint1" data-bs-parent="#accordionHint1">
+<div id="collapseHint1" class="accordion-collapse collapse" data-bs-parent="#accordionHint1" aria-labelledby="headingHint1">
 <div class="accordion-body">
 <p>How is the name of the section where the ‘english.txt’ file appears
 after doing <code>git add</code>?</p>
@@ -1194,7 +1197,7 @@ tracking the changes? See <code>git -h</code>.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1">Show me the solution</h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Add the ‘english.txt’ file for tracking with <code>git</code>.</li>
@@ -1202,7 +1205,7 @@ tracking the changes? See <code>git -h</code>.</p>
 <div class="codewrapper sourceCode" id="cb1">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add english.txt</span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="fu">git</span> add english.txt</span></code></pre>
 </div>
 <ol start="2" style="list-style-type: decimal">
 <li>Check the status of the local git repository. Is there an additional
@@ -1211,7 +1214,7 @@ step to track the file with <code>git</code>?</li>
 <div class="codewrapper sourceCode" id="cb2">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> status</span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a><span class="fu">git</span> status</span></code></pre>
 </div>
 <p>Output</p>
 <pre><code>On branch main
@@ -1234,7 +1237,7 @@ for commit a change:</p>
 <div class="codewrapper sourceCode" id="cb4">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Add english.txt file"</span></span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Add english.txt file"</span></span></code></pre>
 </div>
 <p>Output</p>
 <pre><code>[main (root-commit) bf0b837] Add english.txt file
@@ -1248,7 +1251,7 @@ are tracking.</p>
 <div class="codewrapper sourceCode" id="cb6">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> status</span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" tabindex="-1"></a><span class="fu">git</span> status</span></code></pre>
 </div>
 <p>Output</p>
 <pre><code>On branch main
@@ -1263,8 +1266,8 @@ nothing added to commit but untracked files present (use "git add" to track)</co
 <div class="codewrapper sourceCode" id="cb8">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add greetings.py</span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Add greetings.py script"</span></span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" tabindex="-1"></a><span class="fu">git</span> add greetings.py</span>
+<span id="cb8-2"><a href="#cb8-2" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Add greetings.py script"</span></span></code></pre>
 </div>
 <ol start="4" style="list-style-type: decimal">
 <li>Check the status of the local git repository.</li>
@@ -1273,7 +1276,7 @@ nothing added to commit but untracked files present (use "git add" to track)</co
 <div class="codewrapper sourceCode" id="cb9">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> status</span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" tabindex="-1"></a><span class="fu">git</span> status</span></code></pre>
 </div>
 <p>Output</p>
 <pre><code>On branch main
@@ -1296,25 +1299,27 @@ climbing. We start doing moves, grabbing to holds with our hands,
 stepping onto ledges of the wall. We are adding moves in a sequence as
 we climb: <code>git add &lt;movement</code>. It is like making changes
 to our files and adding them for tracking.</p>
-<figure><img src="../fig/AH-gitAdd.png" alt="" class="figure mx-auto d-block"><figcaption>Adding movements while you climb:
-<code>git add</code> (<a href="https://allisonhorst.com/git-github" class="external-link">Artwork</a> by <a href="https://twitter.com/allison_horst" class="external-link">Allison Horst</a>)</figcaption></figure><p>The route is quite long, so we probably don’t want to fall all way
+<figure><img src="../fig/AH-gitAdd.png" alt="Adding movements while you climb: git add (Artwork by Allison Horst)" class="figure mx-auto d-block"><div class="figcaption">Adding movements while you climb:
+<code>git add</code> (<a href="https://allisonhorst.com/git-github" class="external-link">Artwork</a> by <a href="https://twitter.com/allison_horst" class="external-link">Allison Horst</a>)</div>
+</figure><p>The route is quite long, so we probably don’t want to fall all way
 down to the ground. We want to secure our progress after several
 movements by clipping our rope in a quickdraw in the wall:
 <code>git commit -m "First section of the route"</code>. It is like
 committing our files to secure the changes we have done until some
 point.</p>
-<figure><img src="../fig/AH-gitCommitClick.png" alt="" class="figure mx-auto d-block"><figcaption>Secure your movements (file changes) by clipping
-(<code>git commit</code>) (<a href="https://allisonhorst.com/git-github" class="external-link">Artwork</a> by <a href="https://twitter.com/allison_horst" class="external-link">Allison Horst</a>)</figcaption></figure><p>If we slip and fall, we don’t loose all our progress but we are back
+<figure><img src="../fig/AH-gitCommitClick.png" alt="Secure your movements (file changes) by clipping (git commit) (Artwork by Allison Horst)" class="figure mx-auto d-block"><div class="figcaption">Secure your movements (file changes) by clipping
+(<code>git commit</code>) (<a href="https://allisonhorst.com/git-github" class="external-link">Artwork</a> by <a href="https://twitter.com/allison_horst" class="external-link">Allison Horst</a>)</div>
+</figure><p>If we slip and fall, we don’t loose all our progress but we are back
 to our last clip (commit). The same way as if we mess it up with our
 files or scripts and broke our code, we can go back to our last commit
 where everything was working fine.</p>
-<figure><img src="../fig/AH-gitCommitFall.png" alt="" class="figure mx-auto d-block"><figcaption>Fall only to the last clip (commit) (<a href="https://allisonhorst.com/git-github" class="external-link">Artwork</a> by <a href="https://twitter.com/allison_horst" class="external-link">Allison Horst</a>)</figcaption></figure><div id="callout1" class="callout callout">
+<figure><img src="../fig/AH-gitCommitFall.png" alt="Fall only to the last clip (commit) (Artwork by Allison Horst)" class="figure mx-auto d-block"><div class="figcaption">Fall only to the last clip (commit) (<a href="https://allisonhorst.com/git-github" class="external-link">Artwork</a> by <a href="https://twitter.com/allison_horst" class="external-link">Allison Horst</a>)</div>
+</figure><div id="callout1" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div class="callout-inner">
-<h3 class="callout-title">Callout<a class="anchor" aria-label="anchor" href="#callout1"></a>
-</h3>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title">Callout</h3>
 <div class="callout-content">
 <p>Make sure to often track your changes to avoid having to redo many
 files or lines that were working fine.</p>
@@ -1332,8 +1337,10 @@ files are added with <code>git add</code> and get prepared to be
 committed. - <strong>local repository</strong> where files are saved
 with <code>git commit</code> and the progress is secured allowing us to
 go back to this version of the files in a later point.</p>
-<figure><img src="../fig/SC-git-staging-area.svg" alt="" class="figure mx-auto d-block"><figcaption>Staging area and local git repository. Source: <a href="https://swcarpentry.github.io/git-novice/index.html" class="external-link">Software
-Carpentry</a>)</figcaption></figure>
+<figure><img src="../fig/SC-git-staging-area.svg" alt="Staging area and local git repository. Source: Software Carpentry)" class="figure mx-auto d-block"><div class="figcaption">Staging area and local git repository. Source:
+<a href="https://swcarpentry.github.io/git-novice/index.html" class="external-link">Software
+Carpentry</a>)</div>
+</figure>
 </div>
 </section><section id="additional-useful-tricks"><h2 class="section-heading">Additional useful tricks<a class="anchor" aria-label="anchor" href="#additional-useful-tricks"></a>
 </h2>
@@ -1353,7 +1360,7 @@ adding them to the staging area:</p>
 <div class="codewrapper sourceCode" id="cb11">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add . <span class="at">--dry-run</span></span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" tabindex="-1"></a><span class="fu">git</span> add . <span class="at">--dry-run</span></span></code></pre>
 </div>
 <p>Output</p>
 <pre><code>add 'english.txt'
@@ -1389,7 +1396,7 @@ ignore it.</p></li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2">Show me the solution</h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Create a file name ‘notes.txt’ and make <code>git</code> to ignore
@@ -1398,11 +1405,11 @@ it.</li>
 <div class="codewrapper sourceCode" id="cb13">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create 'notes.txt' file</span></span>
-<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="fu">touch</span> notes.txt</span>
-<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Check repository status</span></span>
-<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> status</span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1" tabindex="-1"></a><span class="co"># Create 'notes.txt' file</span></span>
+<span id="cb13-2"><a href="#cb13-2" tabindex="-1"></a><span class="fu">touch</span> notes.txt</span>
+<span id="cb13-3"><a href="#cb13-3" tabindex="-1"></a></span>
+<span id="cb13-4"><a href="#cb13-4" tabindex="-1"></a><span class="co"># Check repository status</span></span>
+<span id="cb13-5"><a href="#cb13-5" tabindex="-1"></a><span class="fu">git</span> status</span></code></pre>
 </div>
 <p>Output</p>
 <pre><code>On branch main
@@ -1419,7 +1426,7 @@ name of the file on it:</p>
 <div class="codewrapper sourceCode" id="cb16">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> status</span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb16-1"><a href="#cb16-1" tabindex="-1"></a><span class="fu">git</span> status</span></code></pre>
 </div>
 <p>Output</p>
 <pre><code>On branch main
@@ -1434,8 +1441,8 @@ our repository:</p>
 <div class="codewrapper sourceCode" id="cb18">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .gitignore</span>
-<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Add .gitignore file"</span></span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb18-1"><a href="#cb18-1" tabindex="-1"></a><span class="fu">git</span> add .gitignore</span>
+<span id="cb18-2"><a href="#cb18-2" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Add .gitignore file"</span></span></code></pre>
 </div>
 <ol start="2" style="list-style-type: decimal">
 <li>Create a folder name ‘data’ with a couple of files: ‘data_A.txt’,
@@ -1444,13 +1451,13 @@ our repository:</p>
 <div class="codewrapper sourceCode" id="cb19">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mkdir</span> data</span>
-<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="fu">touch</span> data/data_A.txt data/data_B.txt</span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb19-1"><a href="#cb19-1" tabindex="-1"></a><span class="fu">mkdir</span> data</span>
+<span id="cb19-2"><a href="#cb19-2" tabindex="-1"></a><span class="fu">touch</span> data/data_A.txt data/data_B.txt</span></code></pre>
 </div>
 <div class="codewrapper sourceCode" id="cb20">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> status</span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb20-1"><a href="#cb20-1" tabindex="-1"></a><span class="fu">git</span> status</span></code></pre>
 </div>
 <p>Output</p>
 <pre><code>On branch main
@@ -1468,8 +1475,8 @@ repository:</p>
 <div class="codewrapper sourceCode" id="cb23">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .gitignore</span>
-<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Ignore data folder"</span></span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb23-1"><a href="#cb23-1" tabindex="-1"></a><span class="fu">git</span> add .gitignore</span>
+<span id="cb23-2"><a href="#cb23-2" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Ignore data folder"</span></span></code></pre>
 </div>
 <p>* Patterns with asterisks can also be written into the .gitignore
 file (e.g.: *.png to avoid tracking any image with the .png
@@ -1589,7 +1596,7 @@ Why?</p></li>
 <button class="accordion-button hint-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHint1" aria-expanded="false" aria-controls="collapseHint1">
   <h4 class="accordion-header" id="headingHint1">Give me a hint</h4>
 </button>
-<div id="collapseHint1" class="accordion-collapse collapse" data-bs-parent="#accordionHint1" aria-labelledby="headingHint1">
+<div id="collapseHint1" class="accordion-collapse collapse" aria-labelledby="headingHint1" data-bs-parent="#accordionHint1">
 <div class="accordion-body">
 <p>Check options in <code>git</code> with <code>git -h</code> to find a
 <code>git</code> command to show the differences.</p>
@@ -1604,7 +1611,7 @@ specific command.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1">Show me the solution</h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Change “Hello!” in ‘english.txt’ by “Hi!”.</li>
@@ -1619,7 +1626,7 @@ specific command.</p>
 <div class="codewrapper sourceCode" id="cb2">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> diff</span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a><span class="fu">git</span> diff</span></code></pre>
 </div>
 <p>Output</p>
 <pre><code>diff --git a/english.txt b/english.txt
@@ -1641,7 +1648,7 @@ its place (indicated by the plus symbol: +).</p>
 <div class="codewrapper sourceCode" id="cb4">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add english.txt</span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" tabindex="-1"></a><span class="fu">git</span> add english.txt</span></code></pre>
 </div>
 <ol start="4" style="list-style-type: decimal">
 <li>Check difference. Can you see the difference? Is there an option to
@@ -1650,7 +1657,7 @@ see the differences of a file in the staging area?</li>
 <div class="codewrapper sourceCode" id="cb5">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> diff</span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" tabindex="-1"></a><span class="fu">git</span> diff</span></code></pre>
 </div>
 <p>It does not give any output, as it does not find any difference
 between our local file and the file in the local git repository, which
@@ -1661,7 +1668,7 @@ is now in the staging area?</p>
 <div class="codewrapper sourceCode" id="cb6">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> diff <span class="at">--staged</span></span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" tabindex="-1"></a><span class="fu">git</span> diff <span class="at">--staged</span></span></code></pre>
 </div>
 <p>Output</p>
 <pre><code>diff --git a/english.txt b/english.txt
@@ -1679,9 +1686,9 @@ that we have included in the staging area but not committed yet.</p>
 <div class="codewrapper sourceCode" id="cb8">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Change english greeting to a shorter one"</span></span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> diff</span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> diff <span class="at">--staged</span></span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Change english greeting to a shorter one"</span></span>
+<span id="cb8-2"><a href="#cb8-2" tabindex="-1"></a><span class="fu">git</span> diff</span>
+<span id="cb8-3"><a href="#cb8-3" tabindex="-1"></a><span class="fu">git</span> diff <span class="at">--staged</span></span></code></pre>
 </div>
 <p>Neither <code>git diff</code> or <code>git diff --staged</code> give
 any ouput. Why?</p>
@@ -1788,7 +1795,7 @@ done until now?</p>
 <div class="codewrapper sourceCode" id="cb1">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> log</span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="fu">git</span> log</span></code></pre>
 </div>
 <p>Output</p>
 <pre><code>commit f41333befb44c0ea46952b9ddeb00aeb85e96bf0 (HEAD -&gt; main)
@@ -1835,13 +1842,12 @@ Date:   Sun Jul 9 23:14:20 2023 +0100
 <li>A commit hash: a string of numbers and letters that uniquely
 identifies a specific commit.</li>
 </ol>
-<div id="callout1" class="callout callout">
+<div id="callout1" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div class="callout-inner">
-<h3 class="callout-title">Callout<a class="anchor" aria-label="anchor" href="#callout1"></a>
-</h3>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title">Callout</h3>
 <div class="callout-content">
 <p>Commit hash are important to refer to a specific commit and to check
 the files of that previous version.</p>
@@ -1871,13 +1877,12 @@ the option <code>--oneline</code>.</p>
 bf0b837 Add english.txt file</code></pre>
 <p>Here, we get the first 7 characters of the commit hash followed by
 the commit message.</p>
-<div id="callout2" class="callout callout">
+<div id="callout2" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div class="callout-inner">
-<h3 class="callout-title">Callout<a class="anchor" aria-label="anchor" href="#callout2"></a>
-</h3>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title">Callout</h3>
 <div class="callout-content">
 <p>You can see here the importance of providing meaningful messages to
 each commit, so that in case we need to go back and look for a specific
@@ -1947,7 +1952,7 @@ version.</li>
 <div class="codewrapper sourceCode" id="cb5">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> show</span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" tabindex="-1"></a><span class="fu">git</span> show</span></code></pre>
 </div>
 <p>Output</p>
 <pre><code>commit f41333befb44c0ea46952b9ddeb00aeb85e96bf0 (HEAD -&gt; main)
@@ -1971,7 +1976,7 @@ index 10ddd6d..663adb0 100644
 <div class="codewrapper sourceCode" id="cb7">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> show 77d1ea1</span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" tabindex="-1"></a><span class="fu">git</span> show 77d1ea1</span></code></pre>
 </div>
 <p>Output</p>
 <pre><code>commit 77d1ea1918c02ecb2a302804c90f9d5011d5eedf
@@ -1996,20 +2001,19 @@ commit hash with two colons and the filename:
 <div class="codewrapper sourceCode" id="cb9">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> show bf0b837:english.txt</span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" tabindex="-1"></a><span class="fu">git</span> show bf0b837:english.txt</span></code></pre>
 </div>
 <p>Output</p>
 <pre><code>Hello!</code></pre>
 <p>This is different from our current ‘english.txt’ file as you can see
 (e.g., use <code>cat english.txt</code>)</p>
 <pre><code>Hi!</code></pre>
-<div id="callout3" class="callout callout">
+<div id="callout3" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div class="callout-inner">
-<h3 class="callout-title">Callout<a class="anchor" aria-label="anchor" href="#callout3"></a>
-</h3>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title">Callout</h3>
 <div class="callout-content">
 <p>N.B., this works just with plain text files, but no other files like
 word files. Or at least, it won’t be a meaningful output.</p>
@@ -2132,7 +2136,7 @@ can use to go back to the previous version of the file.</p>
 <div class="codewrapper sourceCode" id="cb2">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> status</span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a><span class="fu">git</span> status</span></code></pre>
 </div>
 <p>Output</p>
 <pre><code>On branch main
@@ -2146,7 +2150,7 @@ no changes added to commit (use "git add" and/or "git commit -a")</code></pre>
 <div class="codewrapper sourceCode" id="cb4">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> diff</span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" tabindex="-1"></a><span class="fu">git</span> diff</span></code></pre>
 </div>
 <p>Output</p>
 <pre><code>diff --git a/english.txt b/english.txt
@@ -2164,18 +2168,17 @@ the ‘english.txt’ file?</li>
 <div class="codewrapper sourceCode" id="cb6">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> restore english.txt</span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" tabindex="-1"></a><span class="fu">git</span> restore english.txt</span></code></pre>
 </div>
 <p>If we check now the ‘english.txt’ file (e.g.,
 <code>cat english.txt</code>), we will see that the greeting is back to
 ‘Hi!’.</p>
-<div id="callout1" class="callout callout">
+<div id="callout1" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div class="callout-inner">
-<h3 class="callout-title">Callout<a class="anchor" aria-label="anchor" href="#callout1"></a>
-</h3>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title">Callout</h3>
 <div class="callout-content">
 <p>Be careful when using <code>git restore</code> as none of the changes
 will be tracked by <code>git</code>, and therefore, we will not be able
@@ -2241,8 +2244,8 @@ repository</p>
 <div class="codewrapper sourceCode" id="cb8">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add english.txt</span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> status</span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" tabindex="-1"></a><span class="fu">git</span> add english.txt</span>
+<span id="cb8-2"><a href="#cb8-2" tabindex="-1"></a><span class="fu">git</span> status</span></code></pre>
 </div>
 <p>Output</p>
 <pre><code>On branch main
@@ -2253,7 +2256,7 @@ Changes to be committed:
 <div class="codewrapper sourceCode" id="cb10">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> diff <span class="at">--staged</span></span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" tabindex="-1"></a><span class="fu">git</span> diff <span class="at">--staged</span></span></code></pre>
 </div>
 <p>Output</p>
 <pre><code>diff --git a/english.txt b/english.txt
@@ -2263,13 +2266,12 @@ index 663adb0..4c5477a 100644
 @@ -1 +1 @@
 -Hi!
 +Hey!</code></pre>
-<div id="callout2" class="callout callout">
+<div id="callout2" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div class="callout-inner">
-<h3 class="callout-title">Callout<a class="anchor" aria-label="anchor" href="#callout2"></a>
-</h3>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title">Callout</h3>
 <div class="callout-content">
 <p>Remember the difference between <code>git diff</code> and
 <code>git diff --staged</code>. See the lesson <a href="exploring-the-changes-with-git.html">“Exploring the changes with
@@ -2284,14 +2286,14 @@ area back to our local working directory?</li>
 <div class="codewrapper sourceCode" id="cb12">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> restore <span class="at">--staged</span> english.txt</span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" tabindex="-1"></a><span class="fu">git</span> restore <span class="at">--staged</span> english.txt</span></code></pre>
 </div>
 <p>If we check the status of the repository now, we will see that the
 file is not longer in the staging area.</p>
 <div class="codewrapper sourceCode" id="cb13">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> status</span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1" tabindex="-1"></a><span class="fu">git</span> status</span></code></pre>
 </div>
 <p>Output</p>
 <pre><code>On branch main
@@ -2354,15 +2356,15 @@ of the repository.</li>
 <div class="codewrapper sourceCode" id="cb15">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add english.txt</span>
-<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Change english greeting to a more informal one"</span></span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb15-1"><a href="#cb15-1" tabindex="-1"></a><span class="fu">git</span> add english.txt</span>
+<span id="cb15-2"><a href="#cb15-2" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Change english greeting to a more informal one"</span></span></code></pre>
 </div>
 <pre><code>[main 07ad373] Change english greeting to a more informal one
  1 file changed, 1 insertion(+), 1 deletion(-)</code></pre>
 <div class="codewrapper sourceCode" id="cb17">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> status</span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb17-1"><a href="#cb17-1" tabindex="-1"></a><span class="fu">git</span> status</span></code></pre>
 </div>
 <p>Output</p>
 <pre><code>On branch main
@@ -2370,7 +2372,7 @@ nothing to commit, working tree clean</code></pre>
 <div class="codewrapper sourceCode" id="cb19">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> log <span class="at">--oneline</span></span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb19-1"><a href="#cb19-1" tabindex="-1"></a><span class="fu">git</span> log <span class="at">--oneline</span></span></code></pre>
 </div>
 <p>Output</p>
 <pre><code>07ad373 (HEAD -&gt; main) Change english greeting to a more informal one
@@ -2386,12 +2388,12 @@ without leaving any trace in the history of the repository?</li>
 <div class="codewrapper sourceCode" id="cb21">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> reset <span class="at">--soft</span> HEAD^</span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb21-1"><a href="#cb21-1" tabindex="-1"></a><span class="fu">git</span> reset <span class="at">--soft</span> HEAD^</span></code></pre>
 </div>
 <div class="codewrapper sourceCode" id="cb22">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> status</span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb22-1"><a href="#cb22-1" tabindex="-1"></a><span class="fu">git</span> status</span></code></pre>
 </div>
 <p>Output</p>
 <pre><code>On branch main
@@ -2401,7 +2403,7 @@ Changes to be committed:
 <div class="codewrapper sourceCode" id="cb24">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> log <span class="at">--oneline</span></span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb24-1"><a href="#cb24-1" tabindex="-1"></a><span class="fu">git</span> log <span class="at">--oneline</span></span></code></pre>
 </div>
 <p>Output</p>
 <pre><code>f41333b (HEAD -&gt; main) Change english greeting to a shorter one
@@ -2418,13 +2420,12 @@ any trace in the history of the repository?</li>
 </ol>
 <p>This approach is good to rewrite the commmit message or to add other
 files we might have forgotten to commit together.</p>
-<div id="callout3" class="callout callout">
+<div id="callout3" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div class="callout-inner">
-<h3 class="callout-title">Callout<a class="anchor" aria-label="anchor" href="#callout3"></a>
-</h3>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title">Callout</h3>
 <div class="callout-content">
 <p>However, we should avoid this <code>git reset --soft HEAD^</code>
 approach if we are working in a collaborative project and we have
@@ -2446,8 +2447,8 @@ history of the repository.</p>
 <div class="codewrapper sourceCode" id="cb26">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Change english greeting to a more informal one"</span></span>
-<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> log <span class="at">--oneline</span></span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb26-1"><a href="#cb26-1" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Change english greeting to a more informal one"</span></span>
+<span id="cb26-2"><a href="#cb26-2" tabindex="-1"></a><span class="fu">git</span> log <span class="at">--oneline</span></span></code></pre>
 </div>
 <p>Output</p>
 <pre><code>183b4a4 (HEAD -&gt; main) Change english greeting to a more informal one
@@ -2463,7 +2464,7 @@ local <code>git</code> repository”</a>).</p>
 <div class="codewrapper sourceCode" id="cb28">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> revert <span class="at">--no-edit</span> 183b4a4</span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb28-1"><a href="#cb28-1" tabindex="-1"></a><span class="fu">git</span> revert <span class="at">--no-edit</span> 183b4a4</span></code></pre>
 </div>
 <p>Output</p>
 <pre><code>[main 93c425c] Revert "Change english greeting to a more informal one"
@@ -2474,7 +2475,7 @@ history?</p>
 <div class="codewrapper sourceCode" id="cb30">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> log <span class="at">--oneline</span></span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb30-1"><a href="#cb30-1" tabindex="-1"></a><span class="fu">git</span> log <span class="at">--oneline</span></span></code></pre>
 </div>
 <p>Output</p>
 <pre><code>93c425c (HEAD -&gt; main) Revert "Change english greeting to a more informal one"
@@ -2570,14 +2571,15 @@ branches.</p>
 can see these messages when we run <code>git status</code> and
 <code>git log</code> commands. in a repository.</p>
 <p>By default, our work is commited on the <code>main</code> branch.</p>
-<figure><img src="../fig/TW-main-branch.png" alt="" class="figure mx-auto d-block"><figcaption>Main branch (Source: <a href="https://the-turing-way.netlify.app/reproducible-research/vcs.html" class="external-link">The
-Turing Way</a></figcaption></figure><div id="callout1" class="callout callout">
+<figure><img src="../fig/TW-main-branch.png" alt="Main branch (Source: The Turing Way" class="figure mx-auto d-block"><div class="figcaption">Main branch (Source: <a href="https://the-turing-way.netlify.app/reproducible-research/vcs.html" class="external-link">The
+Turing Way</a>
+</div>
+</figure><div id="callout1" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div class="callout-inner">
-<h3 class="callout-title">Callout<a class="anchor" aria-label="anchor" href="#callout1"></a>
-</h3>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title">Callout</h3>
 <div class="callout-content">
 <p>N.B., originally the main branch was called <code>master</code>.
 However, the term <code>master</code> has been replaced by
@@ -2590,9 +2592,11 @@ for a longer explanation.</p>
 that might go in parallel with the main branch and when our new feature
 is ready or the bug is fixed, we can merge the new branch with the main
 branch.</p>
-<figure><img src="../fig/TW-one-branch.png" alt="" class="figure mx-auto d-block"><figcaption>Create a new branch parallel to the main branch
+<figure><img src="../fig/TW-one-branch.png" alt="Create a new branch parallel to the main branch (Source: The Turing Way" class="figure mx-auto d-block"><div class="figcaption">Create a new branch parallel to the main branch
 (Source: <a href="https://the-turing-way.netlify.app/reproducible-research/vcs.html" class="external-link">The
-Turing Way</a></figcaption></figure><p>Let’s try this out!</p>
+Turing Way</a>
+</div>
+</figure><p>Let’s try this out!</p>
 <div id="challenge1" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
@@ -2624,7 +2628,7 @@ language. What happens?</p></li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1">Show me the solution</h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Let’s add another language for our <code>greeetings.py</code>
@@ -2636,7 +2640,7 @@ switch to it.</li>
 <div class="codewrapper sourceCode" id="cb1">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> branch</span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="fu">git</span> branch</span></code></pre>
 </div>
 <p>Output</p>
 <pre><code>* main</code></pre>
@@ -2645,8 +2649,8 @@ a new branch called ‘new_language’:</p>
 <div class="codewrapper sourceCode" id="cb3">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> branch new_language</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> branch</span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a><span class="fu">git</span> branch new_language</span>
+<span id="cb3-2"><a href="#cb3-2" tabindex="-1"></a><span class="fu">git</span> branch</span></code></pre>
 </div>
 <p>Output</p>
 <pre><code>* main
@@ -2657,14 +2661,14 @@ now, and it indicates with an asterisk the current branch we are on.</p>
 <div class="codewrapper sourceCode" id="cb5">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout new_language</span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" tabindex="-1"></a><span class="fu">git</span> checkout new_language</span></code></pre>
 </div>
 <p>Output</p>
 <pre><code>Switched to branch 'new_language'</code></pre>
 <div class="codewrapper sourceCode" id="cb7">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> branch</span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" tabindex="-1"></a><span class="fu">git</span> branch</span></code></pre>
 </div>
 <p>Output</p>
 <pre><code>  main
@@ -2676,24 +2680,23 @@ branch.</p>
 <div class="codewrapper sourceCode" id="cb9">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout <span class="at">-b</span> new_language</span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" tabindex="-1"></a><span class="fu">git</span> checkout <span class="at">-b</span> new_language</span></code></pre>
 </div>
 <p>Output</p>
 <pre><code>Switched to a new branch 'new_language'</code></pre>
-<div id="callout2" class="callout callout">
+<div id="callout2" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div class="callout-inner">
-<h3 class="callout-title">Callout<a class="anchor" aria-label="anchor" href="#callout2"></a>
-</h3>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title">Callout</h3>
 <div class="callout-content">
 <p><code>git log</code> also shows the branches and points to the branch
 we are currently on with <code>HEAD -&gt;</code>:</p>
 <div class="codewrapper sourceCode" id="cb11">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> log <span class="at">--oneline</span></span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" tabindex="-1"></a><span class="fu">git</span> log <span class="at">--oneline</span></span></code></pre>
 </div>
 <p>Output</p>
 <pre><code>93c425c (HEAD -&gt; new_language, main) Revert "Change english greeting to a more informal one"
@@ -2720,22 +2723,22 @@ one language:</p>
 <div class="codewrapper sourceCode" id="cb14">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Greetings script</span></span>
-<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>language <span class="op">=</span> <span class="bu">input</span>(<span class="st">"Language?: "</span>)</span>
-<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a>filename <span class="op">=</span> language <span class="op">+</span> <span class="st">".txt"</span></span>
-<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(filename, <span class="st">"r"</span>) <span class="im">as</span> <span class="bu">file</span>:</span>
-<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a>   greeting <span class="op">=</span> <span class="bu">file</span>.read()</span>
-<span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a>   <span class="bu">print</span>(greeting)</span></code></pre>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" tabindex="-1"></a></span>
+<span id="cb14-2"><a href="#cb14-2" tabindex="-1"></a><span class="co"># Greetings script</span></span>
+<span id="cb14-3"><a href="#cb14-3" tabindex="-1"></a></span>
+<span id="cb14-4"><a href="#cb14-4" tabindex="-1"></a>language <span class="op">=</span> <span class="bu">input</span>(<span class="st">"Language?: "</span>)</span>
+<span id="cb14-5"><a href="#cb14-5" tabindex="-1"></a></span>
+<span id="cb14-6"><a href="#cb14-6" tabindex="-1"></a>filename <span class="op">=</span> language <span class="op">+</span> <span class="st">".txt"</span></span>
+<span id="cb14-7"><a href="#cb14-7" tabindex="-1"></a></span>
+<span id="cb14-8"><a href="#cb14-8" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(filename, <span class="st">"r"</span>) <span class="im">as</span> <span class="bu">file</span>:</span>
+<span id="cb14-9"><a href="#cb14-9" tabindex="-1"></a>   greeting <span class="op">=</span> <span class="bu">file</span>.read()</span>
+<span id="cb14-10"><a href="#cb14-10" tabindex="-1"></a>   <span class="bu">print</span>(greeting)</span></code></pre>
 </div>
 <p>Test the script:</p>
 <div class="codewrapper sourceCode" id="cb15">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> greetings.py</span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb15-1"><a href="#cb15-1" tabindex="-1"></a><span class="ex">python3</span> greetings.py</span></code></pre>
 </div>
 <p>Output</p>
 <pre><code>Language?: spanish
@@ -2747,11 +2750,11 @@ Hola</code></pre>
 <div class="codewrapper sourceCode" id="cb17">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add spanish.txt</span>
-<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Add spanish language"</span></span>
-<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add greetings.py</span>
-<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Modify greetings.py script to take more than one language"</span></span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb17-1"><a href="#cb17-1" tabindex="-1"></a><span class="fu">git</span> add spanish.txt</span>
+<span id="cb17-2"><a href="#cb17-2" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Add spanish language"</span></span>
+<span id="cb17-3"><a href="#cb17-3" tabindex="-1"></a></span>
+<span id="cb17-4"><a href="#cb17-4" tabindex="-1"></a><span class="fu">git</span> add greetings.py</span>
+<span id="cb17-5"><a href="#cb17-5" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Modify greetings.py script to take more than one language"</span></span></code></pre>
 </div>
 <ol start="4" style="list-style-type: decimal">
 <li>Check the status and the history of the repository.</li>
@@ -2759,7 +2762,7 @@ Hola</code></pre>
 <div class="codewrapper sourceCode" id="cb18">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> status</span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb18-1"><a href="#cb18-1" tabindex="-1"></a><span class="fu">git</span> status</span></code></pre>
 </div>
 <p>Output</p>
 <pre><code>On branch new_language
@@ -2767,7 +2770,7 @@ nothing to commit, working tree clean</code></pre>
 <div class="codewrapper sourceCode" id="cb20">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> log <span class="at">--oneline</span></span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb20-1"><a href="#cb20-1" tabindex="-1"></a><span class="fu">git</span> log <span class="at">--oneline</span></span></code></pre>
 </div>
 <p>Output</p>
 <pre><code>c597724 (HEAD -&gt; new_language) Modify greetings.py script to take more than one language
@@ -2792,7 +2795,7 @@ language. What happens?</li>
 <div class="codewrapper sourceCode" id="cb22">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ls</span></span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb22-1"><a href="#cb22-1" tabindex="-1"></a><span class="fu">ls</span></span></code></pre>
 </div>
 <p>Output</p>
 <pre><code>data         english.txt  greetings.py notes.txt    spanish.txt</code></pre>
@@ -2800,7 +2803,7 @@ language. What happens?</li>
 <div class="codewrapper sourceCode" id="cb24">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout main</span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb24-1"><a href="#cb24-1" tabindex="-1"></a><span class="fu">git</span> checkout main</span></code></pre>
 </div>
 <p>Output</p>
 <pre><code>Switched to branch 'main'</code></pre>
@@ -2808,7 +2811,7 @@ language. What happens?</li>
 <div class="codewrapper sourceCode" id="cb26">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ls</span></span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb26-1"><a href="#cb26-1" tabindex="-1"></a><span class="fu">ls</span></span></code></pre>
 </div>
 <p>Output</p>
 <pre><code>data         english.txt  greetings.py notes.txt</code></pre>
@@ -2817,7 +2820,7 @@ in the new language:</p>
 <div class="codewrapper sourceCode" id="cb28">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> greetings.py</span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb28-1"><a href="#cb28-1" tabindex="-1"></a><span class="ex">python3</span> greetings.py</span></code></pre>
 </div>
 <p>Output</p>
 <pre><code>Language?: spanish
@@ -2866,7 +2869,7 @@ something?</p></li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2">Show me the solution</h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Before merging the <code>new_language</code> branch into the
@@ -2878,7 +2881,7 @@ and commit the change on the <code>main</code> branch.</li>
 <div class="codewrapper sourceCode" id="cb30">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> branch</span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb30-1"><a href="#cb30-1" tabindex="-1"></a><span class="fu">git</span> branch</span></code></pre>
 </div>
 <p>Output</p>
 <pre><code>* main
@@ -2887,7 +2890,7 @@ and commit the change on the <code>main</code> branch.</li>
 <div class="codewrapper sourceCode" id="cb32">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout main</span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb32-1"><a href="#cb32-1" tabindex="-1"></a><span class="fu">git</span> checkout main</span></code></pre>
 </div>
 <p>Output</p>
 <pre><code>Switched to branch 'main'</code></pre>
@@ -2897,20 +2900,20 @@ script:</p>
 <div class="codewrapper sourceCode" id="cb34">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Script for greetings in different languages</span></span>
-<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a>language <span class="op">=</span> <span class="bu">input</span>(<span class="st">"Language?: "</span>)</span>
-<span id="cb34-4"><a href="#cb34-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb34-5"><a href="#cb34-5" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(<span class="st">"english.txt"</span>, <span class="st">"r"</span>) <span class="im">as</span> <span class="bu">file</span>:</span>
-<span id="cb34-6"><a href="#cb34-6" aria-hidden="true" tabindex="-1"></a>    greeting <span class="op">=</span> <span class="bu">file</span>.read()</span>
-<span id="cb34-7"><a href="#cb34-7" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(greeting)</span></code></pre>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb34-1"><a href="#cb34-1" tabindex="-1"></a><span class="co"># Script for greetings in different languages</span></span>
+<span id="cb34-2"><a href="#cb34-2" tabindex="-1"></a></span>
+<span id="cb34-3"><a href="#cb34-3" tabindex="-1"></a>language <span class="op">=</span> <span class="bu">input</span>(<span class="st">"Language?: "</span>)</span>
+<span id="cb34-4"><a href="#cb34-4" tabindex="-1"></a></span>
+<span id="cb34-5"><a href="#cb34-5" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(<span class="st">"english.txt"</span>, <span class="st">"r"</span>) <span class="im">as</span> <span class="bu">file</span>:</span>
+<span id="cb34-6"><a href="#cb34-6" tabindex="-1"></a>    greeting <span class="op">=</span> <span class="bu">file</span>.read()</span>
+<span id="cb34-7"><a href="#cb34-7" tabindex="-1"></a>    <span class="bu">print</span>(greeting)</span></code></pre>
 </div>
 <p>Add and commit the change on the <code>main</code> branch:</p>
 <div class="codewrapper sourceCode" id="cb35">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add greetings.py</span>
-<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Change title of greetings.py script"</span></span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb35-1"><a href="#cb35-1" tabindex="-1"></a><span class="fu">git</span> add greetings.py</span>
+<span id="cb35-2"><a href="#cb35-2" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Change title of greetings.py script"</span></span></code></pre>
 </div>
 <ol start="2" style="list-style-type: decimal">
 <li>Check the history of the repository. Do you miss something?</li>
@@ -2918,7 +2921,7 @@ script:</p>
 <div class="codewrapper sourceCode" id="cb36">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> log <span class="at">--oneline</span></span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb36-1"><a href="#cb36-1" tabindex="-1"></a><span class="fu">git</span> log <span class="at">--oneline</span></span></code></pre>
 </div>
 <p>Output</p>
 <pre><code>4bbb246 (HEAD -&gt; main) Change title of greetings.py script
@@ -2937,7 +2940,7 @@ branch from the <code>main</code> branch?</p>
 <div class="codewrapper sourceCode" id="cb38">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> log <span class="at">--oneline</span> <span class="at">--all</span></span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb38-1"><a href="#cb38-1" tabindex="-1"></a><span class="fu">git</span> log <span class="at">--oneline</span> <span class="at">--all</span></span></code></pre>
 </div>
 <p>Output</p>
 <pre><code>4bbb246 (HEAD -&gt; main) Change title of greetings.py script
@@ -2958,7 +2961,7 @@ branches:</p>
 <div class="codewrapper sourceCode" id="cb40">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> log <span class="at">--oneline</span> <span class="at">--all</span> <span class="at">--graph</span></span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb40-1"><a href="#cb40-1" tabindex="-1"></a><span class="fu">git</span> log <span class="at">--oneline</span> <span class="at">--all</span> <span class="at">--graph</span></span></code></pre>
 </div>
 <p>Output</p>
 <pre><code>* 4bbb246 (HEAD -&gt; main) Change title of greetings.py script
@@ -2982,7 +2985,7 @@ the command: <code>git merge &lt;branch_to_merge&gt;</code>.</p>
 <div class="codewrapper sourceCode" id="cb42">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> merge <span class="at">--no-edit</span> new_language</span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb42-1"><a href="#cb42-1" tabindex="-1"></a><span class="fu">git</span> merge <span class="at">--no-edit</span> new_language</span></code></pre>
 </div>
 <p>Output</p>
 <pre><code>Auto-merging greetings.py
@@ -2997,7 +3000,7 @@ Merge made by the 'ort' strategy.
 <div class="codewrapper sourceCode" id="cb44">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> log <span class="at">--oneline</span> <span class="at">--all</span> <span class="at">--graph</span></span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb44-1"><a href="#cb44-1" tabindex="-1"></a><span class="fu">git</span> log <span class="at">--oneline</span> <span class="at">--all</span> <span class="at">--graph</span></span></code></pre>
 </div>
 <p>Output</p>
 <pre><code>*   55792b8 (HEAD -&gt; main) Merge branch 'new_language'
@@ -3023,7 +3026,7 @@ anymore.</p>
 <div class="codewrapper sourceCode" id="cb46">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> branch <span class="at">-d</span> new_language</span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb46-1"><a href="#cb46-1" tabindex="-1"></a><span class="fu">git</span> branch <span class="at">-d</span> new_language</span></code></pre>
 </div>
 <p>Output</p>
 <pre><code>Deleted branch new_language (was c597724).</code></pre>
@@ -3040,8 +3043,10 @@ anymore.</p>
 <p>A <code>git</code> repository might have many branches when working
 to implement different features at the same time, especially when
 working in a team. Branches can even have sub-branches.</p>
-<figure><img src="../fig/TW-sub-branch.png" alt="" class="figure mx-auto d-block"><figcaption>Branches can become very complex. (Source: <a href="https://the-turing-way.netlify.app/reproducible-research/vcs/vcs-branching.png" class="external-link">The
-Turing Way</a></figcaption></figure><p>As more complex the branching structure and more changes are
+<figure><img src="../fig/TW-sub-branch.png" alt="Branches can become very complex. (Source: The Turing Way" class="figure mx-auto d-block"><div class="figcaption">Branches can become very complex. (Source: <a href="https://the-turing-way.netlify.app/reproducible-research/vcs/vcs-branching.png" class="external-link">The
+Turing Way</a>
+</div>
+</figure><p>As more complex the branching structure and more changes are
 happening at the same time, more coordination and good managing is
 needed. Otherwise, merging conflicts will most likely happen:</p>
 <pre><code>CONFLICT (content): Merge conflict in &lt;file&gt;
@@ -3049,19 +3054,22 @@ Automatic merge failed; fix conflicts and then commit the result.</code></pre>
 <p>For example, if a file is modified in two different branches in the
 same lines, <code>git</code> will not know which version to keep and
 will ask the user to solve the conflict.</p>
-<figure><img src="../fig/SC-merge-conflict.svg" alt="" class="figure mx-auto d-block"><figcaption>Merging conflict. Which line/s to keep? (Source: <a href="https://swcarpentry.github.io/git-novice/index.html" class="external-link">The Software
-Carpentry</a>)</figcaption></figure><div id="solve-your-merging-conflicts" class="callout callout">
+<figure><img src="../fig/SC-merge-conflict.svg" alt="Merging conflict. Which line/s to keep? (Source: The Software Carpentry)" class="figure mx-auto d-block"><div class="figcaption">Merging conflict. Which line/s to keep? (Source:
+<a href="https://swcarpentry.github.io/git-novice/index.html" class="external-link">The
+Software Carpentry</a>)</div>
+</figure><div id="callout3" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="solve-your-merging-conflicts" class="callout-inner">
-<h3 class="callout-title">Solve your merging conflicts<a class="anchor" aria-label="anchor" href="#solve-your-merging-conflicts"></a>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="solve-your-merging-conflicts">Solve your merging conflicts<a class="anchor" aria-label="anchor" href="#solve-your-merging-conflicts"></a>
 </h3>
 <div class="callout-content">
 <p>Merge conflicts might be very annoying and time consuming to
 solve.</p>
-<figure><img src="../fig/AH-gitHug.png" alt="" class="figure mx-auto d-block"><figcaption>Annoying merging conflict. (Source: <a href="https://allisonhorst.com/git-github" class="external-link">Artwork by Allison
-Horst</a>)</figcaption></figure><p>It is recommended to avoid them as much as possible. However, if you
+<figure><img src="../fig/AH-gitHug.png" alt="Annoying merging conflict. (Source: Artwork by Allison Horst)" class="figure mx-auto d-block"><div class="figcaption">Annoying merging conflict. (Source: <a href="https://allisonhorst.com/git-github" class="external-link">Artwork by Allison
+Horst</a>)</div>
+</figure><p>It is recommended to avoid them as much as possible. However, if you
 encounter one, this <a href="https://sethrobertson.github.io/GitFixUm/fixup.html" class="external-link">“choose your
 own adventure” guide</a> by <a href="https://github.com/SethRobertson" class="external-link">Seth Robertson</a> might help
 you to solve it.</p>
@@ -3184,7 +3192,7 @@ see?</p></li>
 <button class="accordion-button hint-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHint1" aria-expanded="false" aria-controls="collapseHint1">
   <h4 class="accordion-header" id="headingHint1">Give me a hint</h4>
 </button>
-<div id="collapseHint1" class="accordion-collapse collapse" data-bs-parent="#accordionHint1" aria-labelledby="headingHint1">
+<div id="collapseHint1" class="accordion-collapse collapse" aria-labelledby="headingHint1" data-bs-parent="#accordionHint1">
 <div class="accordion-body">
 <p>After giving the details for the remote repository and clicking on
 ‘Create repository’, you will see a page with instructions on how to
@@ -3203,7 +3211,7 @@ the <a href="index.html#setup">setup instructions</a>.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1">Show me the solution</h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Log in to your GitHub account. If you don’t have one, create one as
@@ -3224,20 +3232,23 @@ repository’.</p></li>
 <li><p>Go to your repositories page, and click on the green button
 ‘New’.</p></li>
 </ul>
-<figure><img src="../fig/Screenshot_GitHub_NewRepository.png" alt="" class="figure mx-auto d-block"><figcaption>Creating a new repository. On the home page
+<figure><img src="../fig/Screenshot_GitHub_NewRepository.png" alt="Creating a new repository. On the home page (Dashboard), click on the green button ‘New’ or on the ‘+’ sign in the top right corner of the page, and select ‘New repository’." class="figure mx-auto d-block"><div class="figcaption">Creating a new repository. On the home page
 (Dashboard), click on the green button ‘New’ or on the ‘+’ sign in the
-top right corner of the page, and select ‘New repository’.</figcaption></figure><ol start="3" style="list-style-type: decimal">
+top right corner of the page, and select ‘New repository’.</div>
+</figure><ol start="3" style="list-style-type: decimal">
 <li>Give it a name (e.g.: ‘greetings’), a description, and choose if you
 want to make it public or private. Ignore the other options and click on
 ‘Create repository’.</li>
 </ol>
-<figure><img src="../fig/Screenshot_GitHub_NewRepositoryAllDetails.png" alt="" class="figure mx-auto d-block"><figcaption>Add the details of the new repository.</figcaption></figure><ol start="4" style="list-style-type: decimal">
+<figure><img src="../fig/Screenshot_GitHub_NewRepositoryAllDetails.png" alt="Add the details of the new repository." class="figure mx-auto d-block"><div class="figcaption">Add the details of the new repository.</div>
+</figure><ol start="4" style="list-style-type: decimal">
 <li>Synchronize your local repository with the remote repository.</li>
 </ol>
 <p>A page with instructions on how to synchronize your local repository
 with the remote repository will appear.</p>
-<figure><img src="../fig/Screenshot_GitHub_addRemote.png" alt="" class="figure mx-auto d-block"><figcaption>Synchronize your local repository with the remote
-repository.</figcaption></figure><p>Follow the instructions for the case where you already have a local
+<figure><img src="../fig/Screenshot_GitHub_addRemote.png" alt="Synchronize your local repository with the remote repository." class="figure mx-auto d-block"><div class="figcaption">Synchronize your local repository with the
+remote repository.</div>
+</figure><p>Follow the instructions for the case where you already have a local
 repository: “…or push an existing repository from the command line”.</p>
 <p>Open a terminal, and go to the directory of your local
 repository.</p>
@@ -3245,17 +3256,16 @@ repository.</p>
 <div class="codewrapper sourceCode" id="cb1">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> remote add origin git@github.com:Sara-Ll/greetings.git</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> branch <span class="at">-M</span> main</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push <span class="at">-u</span> origin main</span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="fu">git</span> remote add origin git@github.com:Sara-Ll/greetings.git</span>
+<span id="cb1-2"><a href="#cb1-2" tabindex="-1"></a><span class="fu">git</span> branch <span class="at">-M</span> main</span>
+<span id="cb1-3"><a href="#cb1-3" tabindex="-1"></a><span class="fu">git</span> push <span class="at">-u</span> origin main</span></code></pre>
 </div>
-<div id="callout1" class="callout callout">
+<div id="callout1" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div class="callout-inner">
-<h3 class="callout-title">Callout<a class="anchor" aria-label="anchor" href="#callout1"></a>
-</h3>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title">Callout</h3>
 <div class="callout-content">
 <p>When doing <code>git push -u origin main</code>, you might get an
 error message saying that the access to the repository is denied. This
@@ -3270,7 +3280,8 @@ see?</li>
 </ol>
 <p>You should see the files of your local repository in the remote
 repository.</p>
-<figure><img src="../fig/Screenshot_GitHub_RemoteRepository.png" alt="" class="figure mx-auto d-block"><figcaption>The remote repository on GitHub.</figcaption></figure>
+<figure><img src="../fig/Screenshot_GitHub_RemoteRepository.png" alt="The remote repository on GitHub." class="figure mx-auto d-block"><div class="figcaption">The remote repository on GitHub.</div>
+</figure>
 </div>
 </div>
 </div>
@@ -3342,10 +3353,11 @@ local computer</li>
 <p>We have now a remote repository of our local repository. Let’s see
 how we can interact between the local and remote repositories and keep
 them synchronised.</p>
-<figure><img src="../fig/AH-overviewGit2.png" alt="" class="figure mx-auto d-block"><figcaption>This nice schematic shows the <code>git</code>
+<figure><img src="../fig/AH-overviewGit2.png" alt="This nice schematic shows the git commands to interact between our working directory, local repository and remote repository to ensure the tracking of changes. (Source: Artwork by Allison Horst)" class="figure mx-auto d-block"><div class="figcaption">This nice schematic shows the <code>git</code>
 commands to interact between our working directory, local repository and
 remote repository to ensure the tracking of changes. (Source: <a href="https://allisonhorst.com/git-github" class="external-link">Artwork by Allison
-Horst</a>)</figcaption></figure><div id="exercise" class="callout challenge">
+Horst</a>)</div>
+</figure><div id="exercise" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
@@ -3392,7 +3404,7 @@ command to use for updating the remote repository.</p>
 <div class="codewrapper sourceCode" id="cb2">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> greetings.py</span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a><span class="ex">python3</span> greetings.py</span></code></pre>
 </div>
 <p>Output</p>
 <pre><code>Language?: swedish
@@ -3403,8 +3415,8 @@ Hej!</code></pre>
 <div class="codewrapper sourceCode" id="cb4">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add swedish.txt</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Add Swedish language"</span></span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" tabindex="-1"></a><span class="fu">git</span> add swedish.txt</span>
+<span id="cb4-2"><a href="#cb4-2" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Add Swedish language"</span></span></code></pre>
 </div>
 <ol start="3" style="list-style-type: decimal">
 <li>Check the status. Do you see something different from before?</li>
@@ -3412,7 +3424,7 @@ Hej!</code></pre>
 <div class="codewrapper sourceCode" id="cb5">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> status</span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" tabindex="-1"></a><span class="fu">git</span> status</span></code></pre>
 </div>
 <p>Output</p>
 <pre><code>On branch main
@@ -3432,7 +3444,7 @@ the command to update the remote repository.</p>
 <div class="codewrapper sourceCode" id="cb7">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push</span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" tabindex="-1"></a><span class="fu">git</span> push</span></code></pre>
 </div>
 <p>Output</p>
 <pre><code>Enumerating objects: 5, done.
@@ -3506,7 +3518,7 @@ needed)</li>
 <div class="codewrapper sourceCode" id="cb10">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> status</span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" tabindex="-1"></a><span class="fu">git</span> status</span></code></pre>
 </div>
 <p>Output</p>
 <pre><code>On branch main
@@ -3527,7 +3539,7 @@ repository.</li>
 <div class="codewrapper sourceCode" id="cb12">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> pull</span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" tabindex="-1"></a><span class="fu">git</span> pull</span></code></pre>
 </div>
 <p>Output</p>
 <pre><code>remote: Enumerating objects: 5, done.
@@ -3584,7 +3596,7 @@ of the repository and run the following command:</p>
 <div class="codewrapper sourceCode" id="cb14">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone https://github.com/Sara-Ll/git_GitHub_basics.git</span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1" tabindex="-1"></a><span class="fu">git</span> clone https://github.com/Sara-Ll/git_GitHub_basics.git</span></code></pre>
 </div>
 <p>Output</p>
 <pre><code>Cloning into 'git_GitHub_basics'...
@@ -3599,18 +3611,17 @@ the repository.</p>
 <div class="codewrapper sourceCode" id="cb16">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ls</span> git_GitHub_basics</span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb16-1"><a href="#cb16-1" tabindex="-1"></a><span class="fu">ls</span> git_GitHub_basics</span></code></pre>
 </div>
 <p>Output</p>
 <pre><code><span><span class="va">README.md</span></span>
 <span><span class="va">...</span></span></code></pre>
-<div id="callout1" class="callout callout">
+<div id="callout1" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div class="callout-inner">
-<h3 class="callout-title">Callout<a class="anchor" aria-label="anchor" href="#callout1"></a>
-</h3>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title">Callout</h3>
 <div class="callout-content">
 <p>The content of this repository will make sense in the next
 section.</p>
@@ -3870,8 +3881,8 @@ any links that you are not going to use.
   "url": "https://Sara-Ll.github.io/git_and_GitHub_workshop/instructor/aio.html",
   "identifier": "https://Sara-Ll.github.io/git_and_GitHub_workshop/instructor/aio.html",
   "dateCreated": "2023-07-08",
-  "dateModified": "2024-02-27",
-  "datePublished": "2024-02-27"
+  "dateModified": "2024-03-05",
+  "datePublished": "2024-03-05"
 }
 
   </script><script>

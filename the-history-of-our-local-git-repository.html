@@ -387,7 +387,7 @@ done until now?</p>
 <div class="codewrapper sourceCode" id="cb1">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> log</span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="fu">git</span> log</span></code></pre>
 </div>
 <p>Output</p>
 <pre><code>commit f41333befb44c0ea46952b9ddeb00aeb85e96bf0 (HEAD -&gt; main)
@@ -432,13 +432,12 @@ Date:   Sun Jul 9 23:14:20 2023 +0100
     Change english greeting to a shorter one</code></pre>
 <ol style="list-style-type: decimal"><li>A commit hash: a string of numbers and letters that uniquely
 identifies a specific commit.</li>
-</ol><div id="callout1" class="callout callout">
+</ol><div id="callout1" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div class="callout-inner">
-<h3 class="callout-title">Callout<a class="anchor" aria-label="anchor" href="#callout1"></a>
-</h3>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title">Callout</h3>
 <div class="callout-content">
 <p>Commit hash are important to refer to a specific commit and to check
 the files of that previous version.</p>
@@ -466,13 +465,12 @@ the option <code>--oneline</code>.</p>
 bf0b837 Add english.txt file</code></pre>
 <p>Here, we get the first 7 characters of the commit hash followed by
 the commit message.</p>
-<div id="callout2" class="callout callout">
+<div id="callout2" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div class="callout-inner">
-<h3 class="callout-title">Callout<a class="anchor" aria-label="anchor" href="#callout2"></a>
-</h3>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title">Callout</h3>
 <div class="callout-content">
 <p>You can see here the importance of providing meaningful messages to
 each commit, so that in case we need to go back and look for a specific
@@ -537,7 +535,7 @@ version.</li>
 </ol><div class="codewrapper sourceCode" id="cb5">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> show</span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" tabindex="-1"></a><span class="fu">git</span> show</span></code></pre>
 </div>
 <p>Output</p>
 <pre><code>commit f41333befb44c0ea46952b9ddeb00aeb85e96bf0 (HEAD -&gt; main)
@@ -559,7 +557,7 @@ index 10ddd6d..663adb0 100644
 <div class="codewrapper sourceCode" id="cb7">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> show 77d1ea1</span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" tabindex="-1"></a><span class="fu">git</span> show 77d1ea1</span></code></pre>
 </div>
 <p>Output</p>
 <pre><code>commit 77d1ea1918c02ecb2a302804c90f9d5011d5eedf
@@ -582,20 +580,19 @@ commit hash with two colons and the filename:
 <div class="codewrapper sourceCode" id="cb9">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> show bf0b837:english.txt</span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" tabindex="-1"></a><span class="fu">git</span> show bf0b837:english.txt</span></code></pre>
 </div>
 <p>Output</p>
 <pre><code>Hello!</code></pre>
 <p>This is different from our current ‘english.txt’ file as you can see
 (e.g., use <code>cat english.txt</code>)</p>
 <pre><code>Hi!</code></pre>
-<div id="callout3" class="callout callout">
+<div id="callout3" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div class="callout-inner">
-<h3 class="callout-title">Callout<a class="anchor" aria-label="anchor" href="#callout3"></a>
-</h3>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title">Callout</h3>
 <div class="callout-content">
 <p>N.B., this works just with plain text files, but no other files like
 word files. Or at least, it won’t be a meaningful output.</p>
@@ -686,7 +683,7 @@ any links that you are not going to use.
   "identifier": "https://Sara-Ll.github.io/git_and_GitHub_workshop/the-history-of-our-local-git-repository.html",
   "dateCreated": "2023-07-08",
   "dateModified": "2023-11-21",
-  "datePublished": "2024-02-27"
+  "datePublished": "2024-03-05"
 }
 
   </script><script>

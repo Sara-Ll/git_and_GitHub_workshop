@@ -355,10 +355,11 @@ local computer</li>
 <hr class="half-width"><p>We have now a remote repository of our local repository. Let’s see
 how we can interact between the local and remote repositories and keep
 them synchronised.</p>
-<figure><img src="fig/AH-overviewGit2.png" alt="" class="figure mx-auto d-block"><figcaption>This nice schematic shows the <code>git</code>
+<figure><img src="fig/AH-overviewGit2.png" alt="This nice schematic shows the git commands to interact between our working directory, local repository and remote repository to ensure the tracking of changes. (Source: Artwork by Allison Horst)" class="figure mx-auto d-block"><div class="figcaption">This nice schematic shows the <code>git</code>
 commands to interact between our working directory, local repository and
 remote repository to ensure the tracking of changes. (Source: <a href="https://allisonhorst.com/git-github" class="external-link">Artwork by Allison
-Horst</a>)</figcaption></figure><div id="exercise" class="callout challenge">
+Horst</a>)</div>
+</figure><div id="exercise" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
@@ -401,7 +402,7 @@ command to use for updating the remote repository.</p>
 <div class="codewrapper sourceCode" id="cb2">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> greetings.py</span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a><span class="ex">python3</span> greetings.py</span></code></pre>
 </div>
 <p>Output</p>
 <pre><code>Language?: swedish
@@ -410,14 +411,14 @@ Hej!</code></pre>
 </ol><div class="codewrapper sourceCode" id="cb4">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add swedish.txt</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Add Swedish language"</span></span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" tabindex="-1"></a><span class="fu">git</span> add swedish.txt</span>
+<span id="cb4-2"><a href="#cb4-2" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Add Swedish language"</span></span></code></pre>
 </div>
 <ol start="3" style="list-style-type: decimal"><li>Check the status. Do you see something different from before?</li>
 </ol><div class="codewrapper sourceCode" id="cb5">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> status</span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" tabindex="-1"></a><span class="fu">git</span> status</span></code></pre>
 </div>
 <p>Output</p>
 <pre><code>On branch main
@@ -435,7 +436,7 @@ the command to update the remote repository.</p>
 </ol><div class="codewrapper sourceCode" id="cb7">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push</span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" tabindex="-1"></a><span class="fu">git</span> push</span></code></pre>
 </div>
 <p>Output</p>
 <pre><code>Enumerating objects: 5, done.
@@ -503,7 +504,7 @@ needed)</li>
 </ol><div class="codewrapper sourceCode" id="cb10">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> status</span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" tabindex="-1"></a><span class="fu">git</span> status</span></code></pre>
 </div>
 <p>Output</p>
 <pre><code>On branch main
@@ -522,7 +523,7 @@ repository.</li>
 </ol><div class="codewrapper sourceCode" id="cb12">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> pull</span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" tabindex="-1"></a><span class="fu">git</span> pull</span></code></pre>
 </div>
 <p>Output</p>
 <pre><code>remote: Enumerating objects: 5, done.
@@ -578,7 +579,7 @@ of the repository and run the following command:</p>
 <div class="codewrapper sourceCode" id="cb14">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone https://github.com/Sara-Ll/git_GitHub_basics.git</span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1" tabindex="-1"></a><span class="fu">git</span> clone https://github.com/Sara-Ll/git_GitHub_basics.git</span></code></pre>
 </div>
 <p>Output</p>
 <pre><code>Cloning into 'git_GitHub_basics'...
@@ -593,18 +594,17 @@ the repository.</p>
 <div class="codewrapper sourceCode" id="cb16">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ls</span> git_GitHub_basics</span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb16-1"><a href="#cb16-1" tabindex="-1"></a><span class="fu">ls</span> git_GitHub_basics</span></code></pre>
 </div>
 <p>Output</p>
 <pre><code><span><span class="va">README.md</span></span>
 <span><span class="va">...</span></span></code></pre>
-<div id="callout1" class="callout callout">
+<div id="callout1" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div class="callout-inner">
-<h3 class="callout-title">Callout<a class="anchor" aria-label="anchor" href="#callout1"></a>
-</h3>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title">Callout</h3>
 <div class="callout-content">
 <p>The content of this repository will make sense in the next
 section.</p>
@@ -700,7 +700,7 @@ any links that you are not going to use.
   "identifier": "https://Sara-Ll.github.io/git_and_GitHub_workshop/getting-changes-from-a-remote-repository.html",
   "dateCreated": "2023-07-08",
   "dateModified": "2023-11-21",
-  "datePublished": "2024-02-27"
+  "datePublished": "2024-03-05"
 }
 
   </script><script>
