@@ -1,3 +1,3 @@
-## git_and_GitHub_workshop
+## Workshop on git and GitHub
 
-    This is the lesson repository for git_and_GitHub_workshop
+Click on the following link to start the workshop: https://sara-ll.github.io/git_and_GitHub_workshop/
